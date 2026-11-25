@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- Ограничивает документы iframe: игры и CSS-пакеты остаются локальными либо на origin новеллы. -->
+  <meta http-equiv="Content-Security-Policy" content="frame-src 'self' file: blob: data:" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VN Engine (Offline)</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <link rel="stylesheet" href="engine/engine.css" />
+</head>
+<body>
+
+  <div id="unsupportedBrowser" role="alert" style="display:none;position:fixed;top:0;right:0;bottom:0;left:0;z-index:2147483647;align-items:center;justify-content:center;padding:32px;background:#111;color:#fff;font:20px/1.5 Arial,sans-serif;text-align:center;">
+    Internet Explorer не поддерживается. Откройте проект в актуальном Microsoft Edge, Chrome или Firefox.
+  </div>
+
+  <!--
+    Сцена:
+    - bgLayer: фон на весь экран с object-fit: cover
+    - charLayer: персонаж поверх фона
+    - overlay: затемнение/переходы (по желанию)
+    - ui: диалог/меню/кнопки
+  -->
+  <div id="app" class="app">
+
+    <div id="statsPanel" class="statsPanel hidden" role="dialog" aria-modal="true" aria-labelledby="statsTitle">
+      <div class="statsCard">
+        <div class="statsHeader">
+          <div id="statsTitle" class="statsTitle">Script Statistics</div>
+          <div class="statsHeaderActions">
+            <div class="statsViewTabs" role="tablist" aria-label="Statistics views">
+              <button id="btnShowFullGraph" class="btn" type="button" title="Show full graph">📊 Full Graph</button>
+              <button id="btnShowResourcesGraph" class="btn" type="button" title="Resources graph">📦 Resources graph</button>
+              <button id="btnShowGames" class="btn" type="button" title="Show games">🎮 Games</button>
+              <button id="btnShowText" class="btn" type="button" title="Show text statistics">📄 Text</button>
+            </div>
+            <button id="btnCloseStats" class="btn" type="button" aria-label="Close stats">✕</button>
+          </div>
+        </div>
+
+        <!-- Полоса показывает фоновую полную проверку CSS-панорам и не зависит от выбранной вкладки статистики. -->
+        <div id="statsLoadProgress" class="statsLoadProgress hidden" role="status" aria-live="polite">
+          <div class="statsLoadProgressText">
+            <span>Checking 360° panorama packages</span>
+            <span id="statsLoadProgressLabel">0 / 0</span>
+          </div>
+          <progress id="statsLoadProgressBar" class="statsLoadProgressBar" value="0" max="1"></progress>
+        </div>
+
+        <!-- Эта полоса относится только к изображениям текущего Mermaid-графа и остаётся итоговым маркером после загрузки. -->
+        <div id="graphLoadProgress" class="statsLoadProgress graphLoadProgress hidden" role="status" aria-live="polite">
+          <div class="statsLoadProgressText">
+            <span id="graphLoadProgressText">Preparing graph images</span>
+            <span id="graphLoadProgressLabel">0 / 0</span>
+          </div>
+          <progress id="graphLoadProgressBar" class="statsLoadProgressBar" value="0" max="1"></progress>
+        </div>
+        
+        <!-- Добавляем контейнер для переключения между текстом и графиком -->
+        <div class="statsViewContainer">
+          <!-- Текстовое поле статистики -->
+          <textarea id="statsBody" class="statsBody"></textarea>
+          
+          <!-- Область для отображения графика Mermaid (изначально скрыта) -->
+          <div id="graphContainer" class="graphContainer hidden">
+             <!-- Wrapper для panzoom -->
+              <div id="panzoomWrapper" class="panzoom-wrapper">
+                <div id="panzoomContent" class="panzoom-content">
+                  <div id="mermaidWrapper" class="mermaid-wrapper">
+                    <div id="mermaidGraph" class="mermaid"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Панель управления масштабом -->
+              <div class="graph-zoom-controls">
+                <span id="zoomLevel" class="graph-zoom-level">100%</span>
+                <button id="zoomOutBtn" class="graph-zoom-btn" title="Zoom Out">−</button>
+                <button id="zoomInBtn" class="graph-zoom-btn" title="Zoom In">+</button>
+                <button id="zoomResetBtn" class="graph-zoom-btn graph-zoom-reset" title="Reset zoom">⟲</button>
+              </div>
+          </div>
+
+          <!-- Каталог игр -->
+          <div id="gamesContainer" class="gamesContainer hidden">
+            <div id="gamesStatus" class="gamesStatus">Last launch: —</div>
+            <div id="gamesGrid" class="gamesGrid"></div>
+          </div>
+
+        </div>
+        
+        <!-- Панель управления графиком (изначально скрыта) -->
+        <div id="graphControls" class="graphControls hidden">
+          <button id="btnCopyMermaid" class="btn" type="button">📋 Copy code</button>
+          <!-- <a href="https://mermaid.live/" target="_blank" class="btn" style="text-decoration: none;">🔗 Mermaid Live</a> -->
+          <button id="btnRefreshGraph" class="btn" type="button">🔄 Refresh</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="settingsPanel" class="statsPanel hidden" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+      <div class="statsCard settingsCard">
+        <div class="statsHeader">
+          <div id="settingsTitle" class="statsTitle settingsTitle">Информация</div>
+          <div class="statsHeaderActions">
+            <button id="btnCloseSettings" class="btn" type="button" aria-label="Закрыть информацию">✕</button>
+          </div>
+        </div>
+        <!-- Вкладки нужны только при наличии авторского описания; сведения о движке доступны всегда. -->
+        <div id="settingsTabs" class="settingsTabs hidden" role="tablist" aria-label="Разделы информации">
+          <button id="btnInfoProject" class="btn settingsTab" type="button" role="tab" aria-controls="aboutBody" aria-selected="false" tabindex="-1">О проекте</button>
+          <button id="btnInfoEngine" class="btn settingsTab" type="button" role="tab" aria-controls="engineInfoPanel" aria-selected="true" tabindex="0">О движке</button>
+        </div>
+        <div class="statsViewContainer">
+          <div id="engineInfoPanel" class="engineInfoPanel" role="tabpanel" aria-labelledby="btnInfoEngine">
+            <textarea id="settingsBody" class="statsBody settingsBody" aria-label="О движке" readonly></textarea>
+          </div>
+          <!-- Авторский текст выводится отдельно от сведений о движке; ссылки создаёт безопасный рендерер. -->
+          <div id="aboutBody" class="statsBody aboutBody hidden" role="tabpanel" aria-labelledby="btnInfoProject" tabindex="0"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Контейнер standalone-игры из вкладки "Игры" -->
+    <div id="statsGameModal" class="gameModal hidden" role="dialog" aria-modal="true" aria-label="Game">
+      <div id="statsGameFrameWrap" class="gameFrameWrap statsGameFrameWrap">
+        <iframe id="statsGameFrame" class="gameFrame" title="Standalone mini game" src="about:blank" sandbox="allow-scripts" allow="autoplay; accelerometer 'none'; camera 'none'; clipboard-read 'none'; clipboard-write 'none'; display-capture 'none'; fullscreen 'none'; gamepad 'none'; geolocation 'none'; gyroscope 'none'; hid 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; serial 'none'; usb 'none'; xr-spatial-tracking 'none'" referrerpolicy="no-referrer"></iframe>
+        <div class="gameControls">
+          <button id="btnCloseStatsGame" class="btn" type="button">Close Game</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="stage" class="stage">
+      <div id="blurBgLayer" class="blur-bg-layer hidden">
+        <img id="blurBgImage" class="blur-bg-image" alt="" draggable="false" />
+        <video id="blurBgVideo" class="blur-bg-video hidden" muted playsinline preload="metadata"></video>
+      </div>
+
+      <div id="novelWindow" class="novel-window">
+        <img id="bgLayer" class="bg" alt="" draggable="false" />
+        <video id="bgVideoLayer" class="bg hidden" muted loop playsinline preload="auto"></video>
+        <canvas id="bg360Layer" class="bg bg-360 hidden" aria-hidden="true"></canvas>
+        <div id="bg360MarksLayer" class="bg360-marks hidden" aria-hidden="true"></div>
+        <div id="bgScrollHint" class="bg-scroll-hint hidden" aria-hidden="true">Перемещайте фон</div>
+        <div id="charFrame" class="char-frame hidden" aria-hidden="true">
+          <img id="charLayer" class="char hidden" alt="" draggable="false" />
+        </div>
+        <div id="overlay" class="overlay hidden"></div>
+
+        <div id="storyVideoOverlay" class="story-video-overlay hidden" aria-label="Story video">
+          <video id="storyVideoLayer" class="story-video-media hidden" playsinline preload="auto"></video>
+          <img id="storyVideoPoster" class="story-video-media hidden" alt="" draggable="false" />
+          <div id="storyVideoFallbackText" class="story-video-fallback hidden">Video unavailable</div>
+          <div id="storyVideoSkipHint" class="story-video-skip-hint hidden">Click to skip</div>
+        </div>
+
+
+        <div id="uiFrame" class="ui-frame">
+          <!-- Верхняя панель -->
+          <div class="topbar">
+            <div class="topbar-left">
+
+            </div>
+
+            <div class="topbar-right">
+              <!-- Mute -->
+              <button id="btnMute" class="btn icon-btn" type="button" aria-label="Mute"><span class="btn-icon">🔊</span></button>
+
+              <!-- Volume -->
+              <input id="volume" class="slider" type="range" min="0" max="100" value="20" aria-label="Volume" />
+
+              <!-- Одна кнопка открывает сведения о проекте и движке; авторский раздел включается через meta. -->
+              <button id="btnSettings" class="btn icon-btn" type="button" aria-label="Информация" aria-haspopup="dialog" aria-controls="settingsPanel"><span class="btn-icon" aria-hidden="true">ℹ️</span></button>
+              <button id="btnStats" class="btn icon-btn" type="button" aria-label="Stats"><span class="btn-icon">📊</span></button>
+
+              <!-- Restart -->
+              <button id="btnRestart" class="btn icon-btn" type="button" aria-label="Restart story"><span class="btn-icon">🔄</span></button>
+            </div>
+          </div>
+
+
+          <!-- Диалоговое окно -->
+          <div id="dialog" class="dialog" role="button" tabindex="0" aria-label="Next">
+            <div id="nameBox" class="name hidden"></div>
+            <div id="textBox" class="text"></div>
+            <div class="hint">Click to continue</div>
+          </div>
+
+          <!-- Контейнер выбора -->
+          <div id="choices" class="choices hidden" aria-label="Choices"></div>
+
+          <!-- Контейнер мини-игры (iframe) -->
+          <div id="gameModal" class="gameModal hidden" role="dialog" aria-modal="true" aria-label="Game">
+            <div class="gameFrameWrap">
+              <iframe id="gameFrame" class="gameFrame" title="Mini game" src="about:blank" sandbox="allow-scripts" allow="autoplay; accelerometer 'none'; camera 'none'; clipboard-read 'none'; clipboard-write 'none'; display-capture 'none'; fullscreen 'none'; gamepad 'none'; geolocation 'none'; gyroscope 'none'; hid 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; serial 'none'; usb 'none'; xr-spatial-tracking 'none'" referrerpolicy="no-referrer"></iframe>
+              <div class="gameControls">
+                <button id="btnCloseGame" class="btn" type="button">Close Game</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Просмотр фото с 360-меток: карточка по центру, затемнённый фон. -->
+        <div id="bg360PhotoViewer" class="bg360-photo-viewer hidden" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Просмотр изображения">
+          <div class="bg360-photo-viewer-backdrop" data-bg360-photo-dismiss="1"></div>
+          <div class="bg360-photo-viewer-stage">
+            <div class="bg360-photo-card">
+              <div class="bg360-photo-media">
+                <div id="bg360PhotoViewport" class="bg360-photo-slide-viewport">
+                  <div id="bg360PhotoInner" class="bg360-photo-slide-inner">
+                    <img id="bg360PhotoImg" alt="" draggable="false" decoding="async">
+                  </div>
+                </div>
+                <button type="button" class="bg360-photo-viewer-close" data-bg360-photo-close="1" aria-label="Закрыть">×</button>
+                <button type="button" class="bg360-photo-nav bg360-photo-nav-prev hidden" data-bg360-photo-prev="1" aria-label="Предыдущее фото">‹</button>
+                <button type="button" class="bg360-photo-nav bg360-photo-nav-next hidden" data-bg360-photo-next="1" aria-label="Следующее фото">›</button>
+              </div>
+              <div id="bg360PhotoViewerCaption" class="bg360-photo-viewer-caption hidden"></div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    
+
+    
+
+  </div>
+
+  <script>
+    // Показывает понятный отказ в Internet Explorer до разбора современных скриптов, которые этот браузер выполнить не сможет.
+    (function showInternetExplorerWarning() {
+      if (!document.documentMode) return;
+      var warning = document.getElementById("unsupportedBrowser");
+      var application = document.getElementById("app");
+      if (application) application.style.display = "none";
+      if (warning) warning.style.display = "flex";
+    })();
+  </script>
+  <script src="engine/story-sandbox-loader.js"></script>
+  <script>
+    (function() {
+      "use strict";
+
+      // Разбирает единый параметр Debug без учёта регистра и не влияет на работу движка при ошибке в URL.
+      function createDebugCategoryChecker(search) {
+        var categories = Object.create(null);
+
+        try {
+          var params = new URLSearchParams(search || "");
+          params.forEach(function(value, key) {
+            if (String(key || "").trim().toLowerCase() !== "debug") return;
+
+            String(value || "").split(/[\s,;]+/).forEach(function(category) {
+              var normalized = category.trim().toLowerCase();
+              if (!normalized) return;
+              if (normalized === "1" || normalized === "true") normalized = "all";
+              categories[normalized] = true;
+            });
+          });
+        } catch (error) {
+          categories = Object.create(null);
+        }
+
+        // Проверяет только запрошенную категорию; неизвестные значения URL безопасно игнорируются.
+        return function isDebugCategoryEnabled(category) {
+          var normalized = String(category || "").trim().toLowerCase();
+          return !!(normalized && (categories.all || categories[normalized]));
+        };
+      }
+
+      window.VN_DEBUG_ENABLED = createDebugCategoryChecker(window.location && window.location.search);
+
+      var STORY_SCRIPT = "story.js";
+      var STORY_EXAMPLE_SCRIPT = "story-example.js";
+      var STORY360_SCRIPT = "story360.js";
+      // Прямое подключение сохраняет file:// в Chrome 152; "worker" возвращает сохранённую изоляцию без fallback в страницу.
+      var STORY_SCRIPT_LOAD_MODE = "direct";
+      var ENGINE_SCRIPTS = [
+        { src: "engine/resource-path-policy.js", requires: ["VNResourcePathPolicy.validate:function", "VNResourcePathPolicy.resolve:function", "VNResourcePathPolicy.getExtension:function", "VNResourcePathPolicy.isExtensionAllowed:function"] },
+        { src: "engine/expression.js", requires: ["VNExpression.evaluate:function", "VNExpression.inspect:function"] },
+        { src: "engine/story-loader.js", requires: ["VN_STORY_DSL_VERSION:number", "STORY:object"] },
+        { src: "license-key.js", optional: true },
+        { src: "lib/jsrsasign-all-min.js", requires: ["KJUR.crypto.Signature:function", "KEYUTIL.getKey:function"] },
+        { src: "lib/three.min.js", optional: true },
+        { src: "engine/autosave-storage.js", requires: ["VN_AUTOSAVE_STORAGE.DEFAULT_STORAGE_KEY:string", "VN_AUTOSAVE_STORAGE.normalizeSaveId:function", "VN_AUTOSAVE_STORAGE.buildLegacyStorageKey:function", "VN_AUTOSAVE_STORAGE.buildStorageKey:function", "VN_AUTOSAVE_STORAGE.createAutosaveStorage:function"] },
+        { src: "engine/autosave-payload.js", requires: ["VN_AUTOSAVE_PAYLOAD.PAYLOAD_VERSION:number", "VN_AUTOSAVE_PAYLOAD.computeTextFingerprint:function", "VN_AUTOSAVE_PAYLOAD.computeLegacyProjectFingerprint:function", "VN_AUTOSAVE_PAYLOAD.normalizeInteractionFlags:function", "VN_AUTOSAVE_PAYLOAD.validatePayload:function"] },
+        { src: "engine/autosave-controller.js", requires: ["VN_AUTOSAVE_CONTROLLER.DEFAULT_DEBOUNCE_MS:number", "VN_AUTOSAVE_CONTROLLER.createAutosaveController:function"] },
+        { src: "engine/audio-controller.js", requires: ["VN_AUDIO_CONTROLLER.DEFAULT_BGM_VOLUME:number", "VN_AUDIO_CONTROLLER.DEFAULT_BGM_DUCKING_MULTIPLIER:number", "VN_AUDIO_CONTROLLER.DEFAULT_BGM_DUCKING_ATTACK_MS:number", "VN_AUDIO_CONTROLLER.DEFAULT_BGM_DUCKING_RELEASE_MS:number", "VN_AUDIO_CONTROLLER.createAudioController:function"] },
+        { src: "engine/background-media-controller.js", requires: ["VN_BACKGROUND_MEDIA_CONTROLLER.createBackgroundMediaController:function"] },
+        { src: "engine/character-controller.js", requires: ["VN_CHARACTER_CONTROLLER.CHARACTER_WORK_HEIGHT_RATIO:number", "VN_CHARACTER_CONTROLLER.DEFAULT_FOCUS_OPTIONS:object", "VN_CHARACTER_CONTROLLER.getCharacterImagePath:function", "VN_CHARACTER_CONTROLLER.createCharacterController:function"] },
+        { src: "engine/panorama-package-controller.js", requires: ["VN_PANORAMA_PACKAGE_CONTROLLER.CSS_PACK_FORMAT_VERSION:number", "VN_PANORAMA_PACKAGE_CONTROLLER.CSS_PACK_MAX_ENCODED_LENGTH:number", "VN_PANORAMA_PACKAGE_CONTROLLER.CSS_PACK_MAX_DECODED_SIZE:number", "VN_PANORAMA_PACKAGE_CONTROLLER.CSS_PACK_MAX_CHUNKS:number", "VN_PANORAMA_PACKAGE_CONTROLLER.CSS_PACK_MAX_CHUNK_LENGTH:number", "VN_PANORAMA_PACKAGE_CONTROLLER.CSS_PACK_MAX_SOURCE_LENGTH:number", "VN_PANORAMA_PACKAGE_CONTROLLER.CSS_IMAGE_MAX_WIDTH:number", "VN_PANORAMA_PACKAGE_CONTROLLER.CSS_IMAGE_MAX_HEIGHT:number", "VN_PANORAMA_PACKAGE_CONTROLLER.CSS_IMAGE_MAX_PIXELS:number", "VN_PANORAMA_PACKAGE_CONTROLLER.createPanoramaPackageController:function"] },
+        { src: "engine/panorama-photo-viewer-controller.js", requires: ["VN_PANORAMA_PHOTO_VIEWER_CONTROLLER.PHOTO_ZOOM_MIN:number", "VN_PANORAMA_PHOTO_VIEWER_CONTROLLER.PHOTO_ZOOM_MAX:number", "VN_PANORAMA_PHOTO_VIEWER_CONTROLLER.isPhotoMark:function", "VN_PANORAMA_PHOTO_VIEWER_CONTROLLER.normalizePhotoImages:function", "VN_PANORAMA_PHOTO_VIEWER_CONTROLLER.createPanoramaPhotoViewerController:function"] },
+        { src: "engine/panorama-marks-controller.js", requires: ["VN_PANORAMA_MARKS_CONTROLLER.createPanoramaMarksController:function"] },
+        { src: "engine/visual-transition-controller.js", requires: ["VN_VISUAL_TRANSITION_CONTROLLER.DEFAULT_TRANSITION_OUT_MS:number", "VN_VISUAL_TRANSITION_CONTROLLER.DEFAULT_TRANSITION_IN_MS:number", "VN_VISUAL_TRANSITION_CONTROLLER.DEFAULT_TRANSITION_TOTAL_MS:number", "VN_VISUAL_TRANSITION_CONTROLLER.createVisualTransitionController:function"] },
+        { src: "engine/story-video-controller.js", requires: ["VN_STORY_VIDEO_CONTROLLER.DEFAULT_FALLBACK_DURATION:number", "VN_STORY_VIDEO_CONTROLLER.SEEK_TIMEOUT_MS:number", "VN_STORY_VIDEO_CONTROLLER.SKIP_GUARD_MS:number", "VN_STORY_VIDEO_CONTROLLER.createStoryVideoController:function"] },
+        { src: "engine/game-protocol.js", requires: ["VN_GAME_PROTOCOL.GAME_PROTOCOL_VERSION:number", "VN_GAME_PROTOCOL.isSupportedGameProtocolVersion:function", "VN_GAME_PROTOCOL.createGameSessionId:function", "VN_GAME_PROTOCOL.createGameInitMessage:function", "VN_GAME_PROTOCOL.isGameResultMessage:function", "VN_GAME_PROTOCOL.isGameResultEventAllowed:function", "VN_GAME_PROTOCOL.normalizeGameResult:function"] },
+        { src: "engine/game-host.js", requires: ["VN_GAME_HOST.GAME_FRAME_PERMISSIONS_POLICY:string", "VN_GAME_HOST.applyGameFrameSecurity:function", "VN_GAME_HOST.createGameHost:function"] },
+        { src: "engine/story-analysis.js", requires: ["VN_STORY_ANALYSIS.extractAliasId:function", "VN_STORY_ANALYSIS.computeTextInfo:function", "VN_STORY_ANALYSIS.computeStoryStats:function"] },
+        { src: "engine/story-graph.js", requires: ["VN_STORY_GRAPH.forEachOutgoingTarget:function", "VN_STORY_GRAPH.buildAdjacency:function", "VN_STORY_GRAPH.findReachableNodes:function", "VN_STORY_GRAPH.findSceneReachability:function", "VN_STORY_GRAPH.findCyclesSCC:function"] },
+        { src: "engine/engine.js", requires: ["VN_ENGINE_READY:true"] }
+      ];
+
+      // Создаёт ошибку с категорией и безопасным относительным источником для пользовательской и консольной диагностики.
+      function createBootstrapError(category, source, detail) {
+        var safeSource = String(source || "неизвестный файл");
+        var safeDetail = String(detail || "Неизвестная ошибка загрузки.");
+        var error = new Error(safeDetail + " Источник: " + safeSource);
+        error.bootstrapCategory = category;
+        error.bootstrapSource = safeSource;
+        return error;
+      }
+
+      // Читает экспортированный модулем путь только из window, не выполняя вычисляемый код и не обращаясь к прототипам.
+      function readRuntimeContractValue(contractPath) {
+        var parts = String(contractPath || "").split(".");
+        var value = window;
+
+        for (var partIndex = 0; partIndex < parts.length; partIndex++) {
+          var part = parts[partIndex];
+          if (!part || part === "__proto__" || part === "prototype" || part === "constructor") return undefined;
+          if (value === null || value === undefined) return undefined;
+          value = value[part];
+        }
+
+        return value;
+      }
+
+      // Проверяет минимальный публичный API обязательного файла, чтобы повреждённый скрипт не считался успешно загруженным.
+      function validateRuntimeContract(src, requirements) {
+        if (!Array.isArray(requirements) || requirements.length === 0) return;
+
+        for (var requirementIndex = 0; requirementIndex < requirements.length; requirementIndex++) {
+          var requirement = String(requirements[requirementIndex] || "");
+          var separatorIndex = requirement.lastIndexOf(":");
+          var contractPath = separatorIndex >= 0 ? requirement.slice(0, separatorIndex) : requirement;
+          var expected = separatorIndex >= 0 ? requirement.slice(separatorIndex + 1) : "defined";
+          var value = readRuntimeContractValue(contractPath);
+          var matches = expected === "true"
+            ? value === true
+            : expected === "defined"
+              ? value !== undefined
+              : typeof value === expected && (expected !== "object" || value !== null);
+
+          if (!matches) {
+            throw createBootstrapError(
+              "runtime",
+              src,
+              "Обязательный runtime-файл загружен, но не предоставил ожидаемый API " + contractPath + "."
+            );
+          }
+        }
+      }
+
+      // Динамически подключает JavaScript-файл и подтверждает контракт обязательного модуля после выполнения.
+      function loadScript(src, options) {
+        options = options || {};
+
+        return new Promise(function(resolve, reject) {
+          var script = document.createElement("script");
+          script.src = src;
+          script.async = false;
+
+          script.onload = function() {
+            try {
+              validateRuntimeContract(src, options.requires);
+              resolve({ src: src, loaded: true });
+            } catch (error) {
+              reject(error);
+            }
+          };
+
+          script.onerror = function() {
+            if (options.optional) {
+              resolve({ src: src, loaded: false });
+              return;
+            }
+
+            reject(createBootstrapError("runtime", src, "Обязательный runtime-файл недоступен."));
+          };
+
+          document.body.appendChild(script);
+        });
+      }
+
+      // Выбирает способ выполнения сценариев явно; URL-параметры и ошибки загрузки не переключают режим.
+      function getStoryScriptLoader() {
+        var loader = window.VNStorySandboxLoader;
+        var textMethod = STORY_SCRIPT_LOAD_MODE === "direct" ? "loadStoryTextDirect" : "loadStoryText";
+        var mapMethod = STORY_SCRIPT_LOAD_MODE === "direct" ? "loadStory360Direct" : "loadStory360";
+        if (!loader || typeof loader[textMethod] !== "function" || typeof loader[mapMethod] !== "function") {
+          throw createBootstrapError(
+            "runtime",
+            "engine/story-sandbox-loader.js",
+            "Обязательный загрузчик сценариев недоступен или повреждён."
+          );
+        }
+        return { loadStoryText: loader[textMethod], loadStory360: loader[mapMethod] };
+      }
+
+      // Превращает отказ выбранного загрузчика в bootstrap-ошибку с именем файла.
+      function createStoryLoadError(result) {
+        var source = result && result.source ? result.source : "пользовательский файл";
+        var detail = result && result.message ? result.message : "Не удалось загрузить JS-файл сценария.";
+        return createBootstrapError("story", source, "Не удалось принять данные сценария: " + detail);
+      }
+
+      // Принимает обязательный сценарий только как строку и запоминает фактический источник для диагностики парсера.
+      function applyStoryTextResult(result) {
+        if (!result || result.status !== "loaded") throw createStoryLoadError(result);
+        window.STORY_TEXT = result.value;
+        window.STORY_SCRIPT_SOURCE = result.source;
+      }
+
+      // Загружает story.js выбранным способом; недоступный файл допускает пример, ошибка выполнения или данных — нет.
+      function loadStoryScript() {
+        var loader = getStoryScriptLoader();
+        return loader.loadStoryText(STORY_SCRIPT).then(function(result) {
+          if (result.status === "loaded") {
+            applyStoryTextResult(result);
+            return;
+          }
+          if (result.status !== "missing") throw createStoryLoadError(result);
+
+          console.warn("[Bootstrap] story.js недоступен, используется story-example.js");
+          return loader.loadStoryText(STORY_EXAMPLE_SCRIPT).then(function(exampleResult) {
+            applyStoryTextResult(exampleResult);
+          });
+        });
+      }
+
+      // Загружает optional story360.js выбранным способом; отсутствие или ошибка карты не мешает обычным сценам.
+      function loadStory360Script() {
+        var loader = getStoryScriptLoader();
+        return loader.loadStory360(STORY360_SCRIPT).then(function(result) {
+          if (result.status === "missing") return;
+          if (result.status !== "loaded") {
+            console.warn("[Bootstrap] story360.js отключён:", createStoryLoadError(result).message);
+            return;
+          }
+
+          window.STORY360 = result.value;
+          window.STORY360_SCRIPT_SOURCE = result.source;
+        }).catch(function(error) {
+          console.warn("[Bootstrap] story360.js отключён:", error && error.message ? error.message : error);
+        });
+      }
+
+      // Подключает файлы движка строго по очереди, чтобы сохранить зависимости между скриптами.
+      function loadScriptsInOrder(scripts) {
+        return scripts.reduce(function(sequence, item) {
+          return sequence.then(function() {
+            return loadScript(item.src, { optional: item.optional, requires: item.requires });
+          });
+        }, Promise.resolve());
+      }
+
+      // Подключает доверенное расширение после подготовки DOM движка, не задерживая историю ожиданием user.js или init.
+      function loadUserExtension() {
+        var root = null;
+
+        // Убирает частичный интерфейс и дублирует причину строкой для одинаковой диагностики во всех браузерах.
+        // Исходный объект ошибки остаётся вторым аргументом console.warn, чтобы консоль сохранила stack trace.
+        function reportUserError(error) {
+          if (root) root.remove();
+          var reason = error && error.message ? String(error.message) : String(error);
+          console.warn("[User] Расширение user.js отключено: " + reason, error);
+        }
+
+        loadScript("user.js", { optional: true }).then(function(result) {
+          if (!result.loaded) return;
+          var extension = window.VN_USER;
+          if (!extension || typeof extension.init !== "function") {
+            throw new Error("Ожидалась функция window.VN_USER.init(api).");
+          }
+
+          root = document.createElement("div");
+          root.id = "vn-user-root";
+          // Сосед app находится вне stage: нажатия расширения не доходят до обработчиков перелистывания и жестов сцены.
+          // Пустой слой пропускает нажатия; автор включает pointer-events только у собственных элементов.
+          root.style.cssText = "position:fixed;inset:0;z-index:40;pointer-events:none;";
+          document.body.appendChild(root);
+
+          var meta = window.STORY && window.STORY.meta;
+          // Это снимок идентификатора проекта и контейнер, а не доступ к изменяемому состоянию исполнителя.
+          var api = Object.freeze({
+            version: 1,
+            root: root,
+            projectId: meta && meta.projectId ? String(meta.projectId) : "",
+            isLocal: window.location.protocol === "file:"
+          });
+          // Bootstrap проходит эту точку один раз; restart истории не повторяет подключение счётчиков и создание UI.
+          return extension.init(api);
+        }).catch(reportUserError);
+      }
+
+      // Показывает отдельные безопасные сообщения для ошибок сценария и обязательных файлов движка.
+      function showBootstrapError(error) {
+        var textBox = document.getElementById("textBox");
+        var message = "Не удалось запустить новеллу. Проверьте файлы проекта.";
+
+        if (error && error.bootstrapCategory === "runtime") {
+          message = "Не удалось запустить движок: обязательный файл " + error.bootstrapSource + " отсутствует или повреждён.";
+        } else if (error && error.bootstrapCategory === "story") {
+          message = "Не удалось загрузить сценарий: файл " + error.bootstrapSource + " отсутствует или содержит ошибку.";
+        }
+
+        console.error("[Bootstrap]", error);
+
+        if (textBox) {
+          textBox.textContent = message;
+          return;
+        }
+
+        document.body.textContent = message;
+      }
+
+      loadStoryScript()
+        .then(function() {
+          return loadStory360Script();
+        })
+        .then(function() {
+          return loadScriptsInOrder(ENGINE_SCRIPTS);
+        })
+        .then(loadUserExtension)
+        .catch(showBootstrapError);
+    })();
+  </script>
+</body>
+</html>
