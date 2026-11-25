@@ -1,0 +1,2513 @@
+{
+  "date": "2026-11-04",
+  "status": "approved",
+  "reference": "characters/tone_matched_v1/ilya_sokolov/full/normal.png",
+  "source_count": 13,
+  "game_export_count": 16,
+  "tool": "built-in ImageGen",
+  "color_method": "Deterministic smooth RGB correction to approved normal, measured separately for hair shadows/midtones/highlights, skin, garments, footwear and Ilya notebook. Original alpha and spatial coordinates preserved.",
+  "assets": [
+    {
+      "id": "i01_happy",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I01",
+      "emotion": "happy",
+      "scenes": [
+        "01",
+        "05"
+      ],
+      "master": "masters/i01_happy.png",
+      "full": "full/i01_happy.png",
+      "master_sha256": "751bd957d9c93651455fae63e8fa89546825ba9aac1e2d90e2a3ef88219fbd41",
+      "full_sha256": "08691a1a0f61eb042790e327d29b02ad084f8dbbaba242d4b67858ebc585e350",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          43.0,
+          45.0,
+          64.0
+        ],
+        "shirt": [
+          144.0,
+          159.0,
+          195.0
+        ],
+        "trousers": [
+          77.0,
+          71.0,
+          74.0
+        ],
+        "notebook_cover": [
+          42.0,
+          48.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.5,
+          211.0,
+          182.0
+        ],
+        "skin": [
+          213.0,
+          159.0,
+          121.0
+        ],
+        "shoes": [
+          83.0,
+          61.0,
+          48.0
+        ],
+        "hair_shadow": [
+          51.0,
+          36.0,
+          28.0
+        ],
+        "hair_mid": [
+          90.0,
+          64.0,
+          49.0
+        ],
+        "hair_highlight": [
+          120.0,
+          87.0,
+          67.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          41.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.5,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          125.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i01_happy_waist.png",
+          "resource_key": "i01_happy_waist",
+          "game_path": "assets/characters/ilya/i01_happy_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            890
+          ],
+          "sha256": "b3e9c3e3f5c2e164f1c4a4271960fcf213c7ba48fc5abaf0d9a1f3abd421bbf5",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "i01_surprised",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I01",
+      "emotion": "surprised",
+      "scenes": [
+        "06"
+      ],
+      "master": "masters/i01_surprised.png",
+      "full": "full/i01_surprised.png",
+      "master_sha256": "6ce3c4758928ce1172605da284d906f0c2f8e2af902f75d567ab96e1d1e04197",
+      "full_sha256": "4687269ef6151442e1af6c3aff806ca55eeaf07faabb9802029e963c729ba909",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          43.0,
+          44.0,
+          64.0
+        ],
+        "shirt": [
+          140.0,
+          155.0,
+          192.0
+        ],
+        "trousers": [
+          75.0,
+          68.0,
+          71.0
+        ],
+        "notebook_cover": [
+          43.0,
+          49.0,
+          44.0
+        ],
+        "notebook_pages": [
+          225.0,
+          209.0,
+          179.0
+        ],
+        "skin": [
+          211.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          82.0,
+          60.0,
+          49.0
+        ],
+        "hair_shadow": [
+          48.0,
+          33.0,
+          26.0
+        ],
+        "hair_mid": [
+          85.0,
+          60.0,
+          46.0
+        ],
+        "hair_highlight": [
+          115.0,
+          84.0,
+          65.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          44.0
+        ],
+        "notebook_pages": [
+          227.0,
+          213.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          84.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i01_surprised_waist.png",
+          "resource_key": "i01_surprised_waist",
+          "game_path": "assets/characters/ilya/i01_surprised_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            890
+          ],
+          "sha256": "06e21c66ff933fd28859e38056d85c3b57b4ef18f6ef1e967042ebb9cd3ec7f6",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "i02_angry",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I02",
+      "emotion": "angry",
+      "scenes": [
+        "07"
+      ],
+      "master": "masters/i02_angry.png",
+      "full": "full/i02_angry.png",
+      "master_sha256": "ca4f37981a8473652db6ab0f7415d4c86236446268a9fa95e5b27225d611f64b",
+      "full_sha256": "b1c54998b346fa05d8e0f51ba17183d9f35ead164d67096f8fe964a0d6516ea6",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          42.0,
+          42.0,
+          63.0
+        ],
+        "shirt": [
+          137.0,
+          149.0,
+          187.0
+        ],
+        "trousers": [
+          78.0,
+          69.0,
+          72.0
+        ],
+        "notebook_cover": [
+          41.0,
+          47.0,
+          40.0
+        ],
+        "notebook_pages": [
+          225.0,
+          209.0,
+          183.0
+        ],
+        "skin": [
+          205.0,
+          151.0,
+          118.0
+        ],
+        "shoes": [
+          82.0,
+          60.0,
+          48.0
+        ],
+        "hair_shadow": [
+          47.0,
+          34.0,
+          29.0
+        ],
+        "hair_mid": [
+          88.0,
+          65.0,
+          55.0
+        ],
+        "hair_highlight": [
+          117.0,
+          89.0,
+          73.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          60.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          43.0,
+          49.0,
+          43.0
+        ],
+        "notebook_pages": [
+          226.0,
+          212.0,
+          183.0
+        ],
+        "skin": [
+          213.0,
+          161.0,
+          123.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/ilya/i02_angry_full.png",
+          "resource_key": "i02_angry_full",
+          "game_path": "assets/characters/ilya/i02_angry_full.png",
+          "crop_box": null,
+          "sha256": "b1c54998b346fa05d8e0f51ba17183d9f35ead164d67096f8fe964a0d6516ea6",
+          "exact_crop_verified": false
+        }
+      ]
+    },
+    {
+      "id": "i02_happy",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I02",
+      "emotion": "happy",
+      "scenes": [
+        "02А"
+      ],
+      "master": "masters/i02_happy.png",
+      "full": "full/i02_happy.png",
+      "master_sha256": "afb19fc6ff6235603b38d48b2af8f665e52a150c56b5551c1ee090dc23b3d2d7",
+      "full_sha256": "3dac60612dff28d8f20a4cabe20fd55a5869057b961ce396a47d3588bd80de03",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          41.0,
+          41.0,
+          63.0
+        ],
+        "shirt": [
+          137.0,
+          150.0,
+          189.0
+        ],
+        "trousers": [
+          79.0,
+          70.0,
+          74.0
+        ],
+        "notebook_cover": [
+          44.0,
+          49.0,
+          42.0
+        ],
+        "notebook_pages": [
+          229.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          209.0,
+          153.0,
+          119.0
+        ],
+        "shoes": [
+          87.0,
+          63.0,
+          51.0
+        ],
+        "hair_shadow": [
+          45.0,
+          32.0,
+          26.0
+        ],
+        "hair_mid": [
+          86.0,
+          64.0,
+          53.0
+        ],
+        "hair_highlight": [
+          117.0,
+          88.0,
+          73.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          43.0,
+          49.0,
+          44.0
+        ],
+        "notebook_pages": [
+          226.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          213.0,
+          161.0,
+          123.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          49.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i02_happy_waist.png",
+          "resource_key": "i02_happy_waist",
+          "game_path": "assets/characters/ilya/i02_happy_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            890
+          ],
+          "sha256": "4b1d28260078b07a4634895e06908fb807ac325a8080e8b3ee4a3ae5d94ead78",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "i02_normal",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I02",
+      "emotion": "normal",
+      "scenes": [
+        "02",
+        "02А",
+        "10В",
+        "11Б",
+        "18",
+        "18А",
+        "20"
+      ],
+      "master": "masters/i02_normal.png",
+      "full": "full/i02_normal.png",
+      "master_sha256": "f5b3d55259df724bd4ce3549674bdfc1436b79484daeaa7141e6d2967cab8795",
+      "full_sha256": "d1cd4472cc55c037351391f99485f81e64a1e11df14bd86f161eee96aca6c6e4",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          40.0,
+          40.0,
+          60.0
+        ],
+        "shirt": [
+          135.0,
+          147.0,
+          185.0
+        ],
+        "trousers": [
+          74.0,
+          67.0,
+          71.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          42.0
+        ],
+        "notebook_pages": [
+          222.0,
+          207.0,
+          182.0
+        ],
+        "skin": [
+          204.0,
+          152.0,
+          119.0
+        ],
+        "shoes": [
+          81.0,
+          60.0,
+          49.0
+        ],
+        "hair_shadow": [
+          43.0,
+          31.0,
+          27.0
+        ],
+        "hair_mid": [
+          81.0,
+          59.0,
+          49.0
+        ],
+        "hair_highlight": [
+          110.0,
+          82.0,
+          68.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          195.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          43.0,
+          48.0,
+          44.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          123.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          49.0,
+          34.0,
+          27.0
+        ],
+        "hair_mid": [
+          84.0,
+          60.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/ilya/i02_normal_full.png",
+          "resource_key": "i02_normal_full",
+          "game_path": "assets/characters/ilya/i02_normal_full.png",
+          "crop_box": null,
+          "sha256": "d1cd4472cc55c037351391f99485f81e64a1e11df14bd86f161eee96aca6c6e4",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i02_normal_waist.png",
+          "resource_key": "i02_normal_waist",
+          "game_path": "assets/characters/ilya/i02_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            890
+          ],
+          "sha256": "053952050779b5d880b64d075c55d471de30f9496353485aad4b12f1924d50ab",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "i02_sad",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I02",
+      "emotion": "sad",
+      "scenes": [
+        "18"
+      ],
+      "master": "masters/i02_sad.png",
+      "full": "full/i02_sad.png",
+      "master_sha256": "249b40f66bc7ab274b4f0a9beea36d9a441dfd467bf37e727ac125d4509217db",
+      "full_sha256": "6eac8e2dd249090e14f629b3aa4afb18377697312fb5def05640a4896c084fb5",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          44.0,
+          45.0,
+          67.0
+        ],
+        "shirt": [
+          137.0,
+          151.0,
+          193.0
+        ],
+        "trousers": [
+          77.0,
+          71.0,
+          75.0
+        ],
+        "notebook_cover": [
+          46.0,
+          51.0,
+          45.0
+        ],
+        "notebook_pages": [
+          225.0,
+          207.0,
+          180.0
+        ],
+        "skin": [
+          206.0,
+          153.0,
+          122.0
+        ],
+        "shoes": [
+          87.0,
+          65.0,
+          55.0
+        ],
+        "hair_shadow": [
+          50.0,
+          38.0,
+          34.0
+        ],
+        "hair_mid": [
+          88.0,
+          66.0,
+          56.0
+        ],
+        "hair_highlight": [
+          119.0,
+          92.0,
+          77.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          60.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          195.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          45.0,
+          50.0,
+          45.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          213.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          48.0,
+          34.0,
+          27.0
+        ],
+        "hair_mid": [
+          84.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          82.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i02_sad_waist.png",
+          "resource_key": "i02_sad_waist",
+          "game_path": "assets/characters/ilya/i02_sad_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            890
+          ],
+          "sha256": "c67f786ca68049cc87a8250327b10acc38d4c4dbda3446ef0d1422bae9f342a3",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "i02_surprised",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I02",
+      "emotion": "surprised",
+      "scenes": [
+        "20А",
+        "20Б"
+      ],
+      "master": "masters/i02_surprised.png",
+      "full": "full/i02_surprised.png",
+      "master_sha256": "f304302d025bb301811a4ffb1d61ac0dbfe847fa3509cde6423067a1eb464fa9",
+      "full_sha256": "de53073b36903f27c2c2d4f1b27509c2da978a90ebd0cf35283203ab932d8cf3",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          43.0,
+          43.0,
+          64.0
+        ],
+        "shirt": [
+          140.0,
+          152.0,
+          190.0
+        ],
+        "trousers": [
+          79.0,
+          71.0,
+          74.0
+        ],
+        "notebook_cover": [
+          40.0,
+          45.0,
+          37.0
+        ],
+        "notebook_pages": [
+          230.0,
+          213.0,
+          184.0
+        ],
+        "skin": [
+          208.0,
+          156.0,
+          121.0
+        ],
+        "shoes": [
+          84.0,
+          61.0,
+          50.0
+        ],
+        "hair_shadow": [
+          43.0,
+          31.0,
+          26.0
+        ],
+        "hair_mid": [
+          86.0,
+          63.0,
+          52.0
+        ],
+        "hair_highlight": [
+          116.0,
+          87.0,
+          72.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          60.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          43.0,
+          48.0,
+          44.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          213.0,
+          160.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          84.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/ilya/i02_surprised_full.png",
+          "resource_key": "i02_surprised_full",
+          "game_path": "assets/characters/ilya/i02_surprised_full.png",
+          "crop_box": null,
+          "sha256": "de53073b36903f27c2c2d4f1b27509c2da978a90ebd0cf35283203ab932d8cf3",
+          "exact_crop_verified": false
+        }
+      ]
+    },
+    {
+      "id": "i03_normal",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I03",
+      "emotion": "normal",
+      "scenes": [
+        "03А",
+        "08А",
+        "21",
+        "21А",
+        "21Б",
+        "23",
+        "23А",
+        "23Б",
+        "24",
+        "24В",
+        "28",
+        "28А",
+        "28Б",
+        "29"
+      ],
+      "master": "masters/i03_normal.png",
+      "full": "full/i03_normal.png",
+      "master_sha256": "1e011700d479f94a898951b2b8688f56519bcfbc59aab9ac6def809f15dba3eb",
+      "full_sha256": "e320d6f3f421b06da587c3d4807cb677e3f9c5ab09042da1bd776f554b2969af",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          41.0,
+          40.0,
+          60.0
+        ],
+        "shirt": [
+          140.0,
+          152.0,
+          187.0
+        ],
+        "trousers": [
+          74.0,
+          67.0,
+          70.0
+        ],
+        "notebook_cover": [
+          44.0,
+          50.0,
+          43.0
+        ],
+        "notebook_pages": [
+          226.0,
+          210.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          83.0,
+          60.0,
+          49.0
+        ],
+        "hair_shadow": [
+          51.0,
+          36.0,
+          29.0
+        ],
+        "hair_mid": [
+          90.0,
+          63.0,
+          50.0
+        ],
+        "hair_highlight": [
+          121.0,
+          88.0,
+          68.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          226.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          215.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/ilya/i03_normal_full.png",
+          "resource_key": "i03_normal_full",
+          "game_path": "assets/characters/ilya/i03_normal_full.png",
+          "crop_box": null,
+          "sha256": "e320d6f3f421b06da587c3d4807cb677e3f9c5ab09042da1bd776f554b2969af",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i03_normal_waist.png",
+          "resource_key": "i03_normal_waist",
+          "game_path": "assets/characters/ilya/i03_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            890
+          ],
+          "sha256": "225ea2f7d4c786d483df7c2f1d0804c9ae2d79e3b560852ce4c7b51a422ff065",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "i03_sad",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I03",
+      "emotion": "sad",
+      "scenes": [
+        "23А",
+        "23Б",
+        "28Б",
+        "29"
+      ],
+      "master": "masters/i03_sad.png",
+      "full": "full/i03_sad.png",
+      "master_sha256": "5214fa9e1c7f6360a8e6bfbc4fd9de868b3ba5135227afdb1008b35ea4101fbf",
+      "full_sha256": "424799a3c0b16e10254ddf9c4e3ef88c2e54fafadce5f990821236226c0a0d77",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          43.0,
+          43.0,
+          64.0
+        ],
+        "shirt": [
+          138.0,
+          151.0,
+          187.0
+        ],
+        "trousers": [
+          79.0,
+          72.0,
+          75.0
+        ],
+        "notebook_cover": [
+          45.0,
+          51.0,
+          44.0
+        ],
+        "notebook_pages": [
+          226.0,
+          209.0,
+          183.0
+        ],
+        "skin": [
+          210.0,
+          158.0,
+          124.0
+        ],
+        "shoes": [
+          88.0,
+          65.0,
+          54.0
+        ],
+        "hair_shadow": [
+          50.0,
+          37.0,
+          30.0
+        ],
+        "hair_mid": [
+          88.0,
+          64.0,
+          51.0
+        ],
+        "hair_highlight": [
+          121.0,
+          89.0,
+          71.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          43.0,
+          48.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          215.0,
+          161.0,
+          125.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i03_sad_waist.png",
+          "resource_key": "i03_sad_waist",
+          "game_path": "assets/characters/ilya/i03_sad_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            890
+          ],
+          "sha256": "b75b110f9d3629aee5de814e8decf86502694ae85e98b343c3cde186877dadf3",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "i04_happy",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I04",
+      "emotion": "happy",
+      "scenes": [
+        "E1"
+      ],
+      "master": "masters/i04_happy.png",
+      "full": "full/i04_happy.png",
+      "master_sha256": "a463fa7a36035c8215b27e7fa46040cea6d80bc037ed700cf82ba4a1b4a1d5c7",
+      "full_sha256": "b73a05f28b03b11cf2f4450dbd818b6f999b4e36a0e0c4a84d26a5edecf6617d",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          42.0,
+          42.0,
+          64.0
+        ],
+        "shirt": [
+          138.0,
+          151.0,
+          192.0
+        ],
+        "trousers": [
+          73.0,
+          67.0,
+          71.0
+        ],
+        "notebook_cover": [
+          55.0,
+          63.0,
+          55.0
+        ],
+        "notebook_pages": [
+          218.0,
+          199.0,
+          170.0
+        ],
+        "skin": [
+          217.0,
+          160.0,
+          124.0
+        ],
+        "shoes": [
+          92.0,
+          68.0,
+          58.0
+        ],
+        "hair_shadow": [
+          50.0,
+          37.0,
+          31.0
+        ],
+        "hair_mid": [
+          89.0,
+          66.0,
+          55.0
+        ],
+        "hair_highlight": [
+          122.0,
+          92.0,
+          75.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          62.0,
+          66.0
+        ],
+        "notebook_cover": [
+          43.0,
+          49.0,
+          44.0
+        ],
+        "notebook_pages": [
+          226.0,
+          211.0,
+          184.0
+        ],
+        "skin": [
+          215.0,
+          162.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          49.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          65.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i04_happy_waist.png",
+          "resource_key": "i04_happy_waist",
+          "game_path": "assets/characters/ilya/i04_happy_waist.png",
+          "crop_box": [
+            0,
+            80,
+            1024,
+            1010
+          ],
+          "sha256": "926bff51a0038efa9c11119069c9e8b541f659bee7cc0dfee6efffd127bc9277",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "i04_normal",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I04",
+      "emotion": "normal",
+      "scenes": [
+        "04",
+        "04Б",
+        "14",
+        "17",
+        "17А",
+        "17Б",
+        "27",
+        "27А",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E8",
+        "P"
+      ],
+      "master": "masters/i04_normal.png",
+      "full": "full/i04_normal.png",
+      "master_sha256": "2d42719570d83c96b9f889304185bf482885c39c5834f783d897a4ddcce2d041",
+      "full_sha256": "026cc71a6ff2ba81f3fb019b2910d7cbdc7ae3c9be18d80e8f02647736bf3456",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          41.0,
+          41.0,
+          62.0
+        ],
+        "shirt": [
+          139.0,
+          151.0,
+          187.0
+        ],
+        "trousers": [
+          68.0,
+          62.0,
+          65.0
+        ],
+        "notebook_cover": [
+          53.0,
+          60.0,
+          54.0
+        ],
+        "notebook_pages": [
+          211.0,
+          194.0,
+          168.0
+        ],
+        "skin": [
+          213.0,
+          160.0,
+          123.0
+        ],
+        "shoes": [
+          84.0,
+          64.0,
+          55.0
+        ],
+        "hair_shadow": [
+          51.0,
+          39.0,
+          33.0
+        ],
+        "hair_mid": [
+          86.0,
+          65.0,
+          53.0
+        ],
+        "hair_highlight": [
+          114.0,
+          88.0,
+          71.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          58.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          67.0,
+          61.0,
+          65.0
+        ],
+        "notebook_cover": [
+          46.0,
+          52.0,
+          48.0
+        ],
+        "notebook_pages": [
+          225.0,
+          211.0,
+          183.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          34.0,
+          27.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          48.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i04_normal_waist.png",
+          "resource_key": "i04_normal_waist",
+          "game_path": "assets/characters/ilya/i04_normal_waist.png",
+          "crop_box": [
+            0,
+            80,
+            1024,
+            1010
+          ],
+          "sha256": "088ae02fb436179c770d2aeb5892eb0b03c194aaf2354932435431a8c006b076",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "i04_sad",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I04",
+      "emotion": "sad",
+      "scenes": [
+        "04Б",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E7"
+      ],
+      "master": "masters/i04_sad.png",
+      "full": "full/i04_sad.png",
+      "master_sha256": "6259aa00d2256998f51e59ca24373629be17846a100600bf7536cd4a299b7668",
+      "full_sha256": "65f0baa1c598a01b3456652cd66e3f0601edc84cb8a186b24a4ce29f349f266b",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          42.0,
+          43.0,
+          65.0
+        ],
+        "shirt": [
+          136.0,
+          149.0,
+          189.0
+        ],
+        "trousers": [
+          74.0,
+          67.0,
+          72.0
+        ],
+        "notebook_cover": [
+          54.0,
+          61.0,
+          54.0
+        ],
+        "notebook_pages": [
+          218.0,
+          200.0,
+          173.0
+        ],
+        "skin": [
+          211.0,
+          157.0,
+          123.0
+        ],
+        "shoes": [
+          89.0,
+          70.0,
+          60.0
+        ],
+        "hair_shadow": [
+          49.0,
+          36.0,
+          31.0
+        ],
+        "hair_mid": [
+          91.0,
+          67.0,
+          56.0
+        ],
+        "hair_highlight": [
+          122.0,
+          92.0,
+          75.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          68.0,
+          62.0,
+          66.0
+        ],
+        "notebook_cover": [
+          44.0,
+          49.0,
+          45.0
+        ],
+        "notebook_pages": [
+          226.0,
+          211.5,
+          183.0
+        ],
+        "skin": [
+          215.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          49.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          84.0,
+          65.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i04_sad_waist.png",
+          "resource_key": "i04_sad_waist",
+          "game_path": "assets/characters/ilya/i04_sad_waist.png",
+          "crop_box": [
+            0,
+            80,
+            1024,
+            1010
+          ],
+          "sha256": "9fd27a0b320a4d4054c9a43a282389fcdfe244fe4db90d7d05628421c9f3f481",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "i05_normal",
+      "character": "Илья",
+      "slug": "ilya_sokolov",
+      "pose": "I05",
+      "emotion": "normal",
+      "scenes": [
+        "25"
+      ],
+      "master": "masters/i05_normal.png",
+      "full": "full/i05_normal.png",
+      "master_sha256": "131d7c55f258b1446860e148f148cacd1b85361836b7df79bf0b6819ccb8088d",
+      "full_sha256": "38b5b1c72c4c95974d6af39131be593be71bc0b23c16e23d22874c5b81ea3da3",
+      "alpha_identical": true,
+      "color_before": {
+        "cardigan": [
+          44.0,
+          44.0,
+          58.0
+        ],
+        "shirt": [
+          127.0,
+          138.0,
+          167.0
+        ],
+        "trousers": [
+          70.0,
+          65.0,
+          68.0
+        ],
+        "notebook_cover": [
+          45.0,
+          51.0,
+          45.0
+        ],
+        "notebook_pages": [
+          206.0,
+          183.0,
+          153.0
+        ],
+        "skin": [
+          206.0,
+          157.0,
+          124.0
+        ],
+        "shoes": [
+          74.0,
+          59.0,
+          49.0
+        ],
+        "hair_shadow": [
+          50.0,
+          37.0,
+          29.0
+        ],
+        "hair_mid": [
+          87.0,
+          65.0,
+          51.0
+        ],
+        "hair_highlight": [
+          117.0,
+          88.0,
+          71.0
+        ]
+      },
+      "color_after": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          193.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          48.0,
+          43.0
+        ],
+        "notebook_pages": [
+          226.0,
+          211.0,
+          183.0
+        ],
+        "skin": [
+          214.0,
+          160.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "target_color": {
+        "cardigan": [
+          38.0,
+          39.0,
+          59.0
+        ],
+        "shirt": [
+          141.0,
+          156.0,
+          194.0
+        ],
+        "trousers": [
+          69.0,
+          63.0,
+          67.0
+        ],
+        "notebook_cover": [
+          42.0,
+          47.0,
+          43.0
+        ],
+        "notebook_pages": [
+          227.0,
+          212.0,
+          184.0
+        ],
+        "skin": [
+          214.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          78.0,
+          56.0,
+          45.0
+        ],
+        "hair_shadow": [
+          50.0,
+          35.0,
+          28.0
+        ],
+        "hair_mid": [
+          85.0,
+          61.0,
+          47.0
+        ],
+        "hair_highlight": [
+          113.0,
+          83.0,
+          64.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/ilya/i05_normal_full.png",
+          "resource_key": "i05_normal_full",
+          "game_path": "assets/characters/ilya/i05_normal_full.png",
+          "crop_box": null,
+          "sha256": "38b5b1c72c4c95974d6af39131be593be71bc0b23c16e23d22874c5b81ea3da3",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/ilya/i05_normal_waist.png",
+          "resource_key": "i05_normal_waist",
+          "game_path": "assets/characters/ilya/i05_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "29f9b6586b2e4e449e20160a67a8978156b0f0fde070be98ec576387c701adab",
+          "exact_crop_verified": true
+        }
+      ]
+    }
+  ],
+  "approval": {
+    "date": "2026-11-04",
+    "status": "approved",
+    "user_instruction": "в сессии \"картинки\" мы сделали позы.изучи сессию, прими все фото персонажей и  добавь их в прототип",
+    "source_thread_title": "картинки",
+    "source_thread_id": "01a1989c-7990-7180-ae25-e77e8659bedc",
+    "scope": "All six final character sets after the second color review: 88 full-body sources, 60 basic PNGs in tone_matched_v2 and the 104 scene-ready game exports. Includes the accepted Nikita N01 happy and Sofya S05 arms-down substitutions. No image pixels changed by approval or integration."
+  }
+}

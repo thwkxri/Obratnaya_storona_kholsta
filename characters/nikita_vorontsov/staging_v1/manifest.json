@@ -1,0 +1,1597 @@
+{
+  "date": "2026-11-04",
+  "status": "approved",
+  "reference": "characters/tone_matched_v1/nikita_vorontsov/full/n01_normal.png",
+  "source_count": 11,
+  "game_export_count": 12,
+  "tool": "built-in ImageGen",
+  "color_method": "Deterministic smooth RGB correction to approved normal, measured separately for hair shadows/midtones/highlights, skin, garments, footwear and Ilya notebook. Original alpha and spatial coordinates preserved.",
+  "assets": [
+    {
+      "id": "n02_normal",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N02",
+      "emotion": "normal",
+      "scenes": [
+        "01"
+      ],
+      "master": "masters/n02_normal.png",
+      "full": "full/n02_normal.png",
+      "master_sha256": "41fb0b42e2d616f2f14a03e3b46cc8e1ee9b9bbf745f41689653ac7d46f88d57",
+      "full_sha256": "fbc0eca55328a94c5a2a29eae3a15ede7276b113c3150a73c86f02b833772447",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          103.0,
+          100.0,
+          101.0
+        ],
+        "trousers": [
+          68.0,
+          66.0,
+          67.0
+        ],
+        "skin": [
+          198.0,
+          158.0,
+          134.0
+        ],
+        "shoes": [
+          84.0,
+          81.0,
+          81.0
+        ],
+        "hair_shadow": [
+          89.0,
+          73.0,
+          58.0
+        ],
+        "hair_mid": [
+          131.0,
+          109.0,
+          91.0
+        ],
+        "hair_highlight": [
+          161.0,
+          139.0,
+          118.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          200.0,
+          161.0,
+          135.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          65.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          96.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          122.0,
+          99.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n02_normal_waist.png",
+          "resource_key": "n02_normal_waist",
+          "game_path": "assets/characters/nikita/n02_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "733ff6622598e56bb009a793187dbb078dbe19f2fe1a3edf52e60956e4980c7a",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "n03_normal",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N03",
+      "emotion": "normal",
+      "scenes": [
+        "E4"
+      ],
+      "master": "masters/n03_normal.png",
+      "full": "full/n03_normal.png",
+      "master_sha256": "668562d94d4d4a757d7d645f63ead1ee67717693215fe410e2d8f6b41654e470",
+      "full_sha256": "9781cb3f08d4f8de9de9024199efa96bf9375bcf5f64267531fe6b9c55da0ea7",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          100.0,
+          97.0,
+          98.0
+        ],
+        "trousers": [
+          66.0,
+          63.0,
+          64.0
+        ],
+        "skin": [
+          198.0,
+          159.0,
+          134.0
+        ],
+        "shoes": [
+          84.0,
+          81.0,
+          82.0
+        ],
+        "hair_shadow": [
+          85.0,
+          69.0,
+          55.0
+        ],
+        "hair_mid": [
+          121.0,
+          101.0,
+          84.0
+        ],
+        "hair_highlight": [
+          148.0,
+          127.0,
+          107.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          56.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          81.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n03_normal_waist.png",
+          "resource_key": "n03_normal_waist",
+          "game_path": "assets/characters/nikita/n03_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "66bf1324778848ee69a9f4b886ad1243a58d7c045466920180579179f8585a1a",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "n03_sad",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N03",
+      "emotion": "sad",
+      "scenes": [
+        "E4"
+      ],
+      "master": "masters/n03_sad.png",
+      "full": "full/n03_sad.png",
+      "master_sha256": "0ee61de1ca35c80e384bfc42bdd7e04442689ebfc3d17fc340a4777bff1a33d4",
+      "full_sha256": "0e9a2bbf820f91cdc85b6c066c519fcab25c8835bb624a6b947287340be0c51c",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          102.0,
+          99.0,
+          99.0
+        ],
+        "trousers": [
+          68.0,
+          65.0,
+          67.0
+        ],
+        "skin": [
+          196.0,
+          157.0,
+          132.0
+        ],
+        "shoes": [
+          87.0,
+          85.0,
+          85.0
+        ],
+        "hair_shadow": [
+          85.0,
+          70.0,
+          57.0
+        ],
+        "hair_mid": [
+          125.0,
+          106.0,
+          89.0
+        ],
+        "hair_highlight": [
+          154.0,
+          134.0,
+          114.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          58.0,
+          55.0,
+          56.0
+        ],
+        "skin": [
+          196.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          81.0,
+          65.0,
+          50.0
+        ],
+        "hair_mid": [
+          117.0,
+          96.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n03_sad_waist.png",
+          "resource_key": "n03_sad_waist",
+          "game_path": "assets/characters/nikita/n03_sad_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "205080fc79be18cfed910adf21c71b4dc9c079a952e4c7266ff0985f98165c7f",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "n03_surprised",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N03",
+      "emotion": "surprised",
+      "scenes": [
+        "E4"
+      ],
+      "master": "masters/n03_surprised.png",
+      "full": "full/n03_surprised.png",
+      "master_sha256": "f69081f4ce416222b88b95e862b568b1b7dd3e835c3e9606729701461404212a",
+      "full_sha256": "42ab1ab6acb002a0f8cedb36128b95ae1bd0bd57ac45a06dace5ccb768bcffce",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          97.0,
+          94.0,
+          95.0
+        ],
+        "trousers": [
+          65.0,
+          62.0,
+          64.0
+        ],
+        "skin": [
+          196.0,
+          158.0,
+          135.0
+        ],
+        "shoes": [
+          84.0,
+          81.0,
+          81.0
+        ],
+        "hair_shadow": [
+          82.0,
+          69.0,
+          57.0
+        ],
+        "hair_mid": [
+          122.0,
+          103.0,
+          87.0
+        ],
+        "hair_highlight": [
+          151.0,
+          131.0,
+          112.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          96.0,
+          93.0,
+          92.0
+        ],
+        "trousers": [
+          58.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          81.2,
+          65.0,
+          50.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          143.0,
+          121.0,
+          99.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n03_surprised_waist.png",
+          "resource_key": "n03_surprised_waist",
+          "game_path": "assets/characters/nikita/n03_surprised_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "b6319a7e868b5b8410866581d05094ff0a8ecefe38620cf512cbdb65b28e2738",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "n04_angry",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N04",
+      "emotion": "angry",
+      "scenes": [
+        "E1",
+        "E2"
+      ],
+      "master": "masters/n04_angry.png",
+      "full": "full/n04_angry.png",
+      "master_sha256": "139dd158cb698f5a038673d4367c0fc264920f8f95104724d754ab6a6034b0f7",
+      "full_sha256": "5773b674788800621e699e8b98b9e4e333c7a0d739105f74cc91a850e5405623",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          100.0,
+          97.0,
+          97.0
+        ],
+        "trousers": [
+          79.0,
+          76.0,
+          76.0
+        ],
+        "skin": [
+          200.0,
+          160.0,
+          136.0
+        ],
+        "shoes": [
+          97.0,
+          94.0,
+          93.0
+        ],
+        "hair_shadow": [
+          84.0,
+          69.0,
+          56.0
+        ],
+        "hair_mid": [
+          129.0,
+          111.0,
+          93.0
+        ],
+        "hair_highlight": [
+          158.0,
+          138.0,
+          118.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          95.0,
+          92.0,
+          92.0
+        ],
+        "trousers": [
+          59.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          198.0,
+          159.0,
+          133.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          81.0,
+          65.0,
+          50.0
+        ],
+        "hair_mid": [
+          117.0,
+          95.0,
+          78.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n04_angry_waist.png",
+          "resource_key": "n04_angry_waist",
+          "game_path": "assets/characters/nikita/n04_angry_waist.png",
+          "crop_box": [
+            0,
+            146,
+            1024,
+            1076
+          ],
+          "sha256": "b0b25c8e04b5fdf4954aa90f6cdbfa891fd1d958011e5965f897c1fa8c64e4f2",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "n04_happy",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N04",
+      "emotion": "happy",
+      "scenes": [
+        "04Б"
+      ],
+      "master": "masters/n04_happy.png",
+      "full": "full/n04_happy.png",
+      "master_sha256": "02b9d22443f3425d5d3893ab1d8aa7a1aef64e2250852c3900951a13579db898",
+      "full_sha256": "44fc4a4a17563e2894c0370b94780aedf366aaf8722662663d4447a1fc2d0b06",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          96.0,
+          93.0,
+          94.0
+        ],
+        "trousers": [
+          75.0,
+          71.0,
+          73.0
+        ],
+        "skin": [
+          197.0,
+          156.0,
+          133.0
+        ],
+        "shoes": [
+          92.0,
+          88.0,
+          88.0
+        ],
+        "hair_shadow": [
+          85.0,
+          71.0,
+          58.0
+        ],
+        "hair_mid": [
+          128.0,
+          109.0,
+          92.0
+        ],
+        "hair_highlight": [
+          156.0,
+          134.0,
+          115.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          95.0,
+          92.0,
+          92.0
+        ],
+        "trousers": [
+          59.0,
+          56.0,
+          56.0
+        ],
+        "skin": [
+          199.0,
+          160.0,
+          134.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          81.0,
+          65.0,
+          51.0
+        ],
+        "hair_mid": [
+          117.0,
+          96.0,
+          78.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          100.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n04_happy_waist.png",
+          "resource_key": "n04_happy_waist",
+          "game_path": "assets/characters/nikita/n04_happy_waist.png",
+          "crop_box": [
+            0,
+            146,
+            1024,
+            1076
+          ],
+          "sha256": "ed6acad4f711924a35c626fdf8e985e4d30b277063a5850288876379429627bb",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "n04_normal",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N04",
+      "emotion": "normal",
+      "scenes": [
+        "04",
+        "14",
+        "E1",
+        "E2",
+        "E8"
+      ],
+      "master": "masters/n04_normal.png",
+      "full": "full/n04_normal.png",
+      "master_sha256": "4500e79d03c875021ba40733546093cc56b87ca6bd592b233c8fed54900c7b89",
+      "full_sha256": "c1f96f7798c6fbe01e89bbf77615f7b49f6062dcccc29d5a5dfbb7ab28ff5434",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          94.0,
+          91.0,
+          92.0
+        ],
+        "trousers": [
+          70.0,
+          66.0,
+          67.0
+        ],
+        "skin": [
+          199.0,
+          160.0,
+          136.0
+        ],
+        "shoes": [
+          91.0,
+          87.0,
+          87.0
+        ],
+        "hair_shadow": [
+          86.0,
+          71.0,
+          58.0
+        ],
+        "hair_mid": [
+          126.0,
+          107.0,
+          90.0
+        ],
+        "hair_highlight": [
+          153.0,
+          132.0,
+          112.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          58.0,
+          55.0,
+          56.0
+        ],
+        "skin": [
+          198.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          50.3
+        ],
+        "hair_mid": [
+          117.0,
+          96.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n04_normal_waist.png",
+          "resource_key": "n04_normal_waist",
+          "game_path": "assets/characters/nikita/n04_normal_waist.png",
+          "crop_box": [
+            0,
+            146,
+            1024,
+            1076
+          ],
+          "sha256": "c6528898666ca78318f1ffcf1ca2ebd01685ee3ea782c77e601425e10c6bce63",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "n04_sad",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N04",
+      "emotion": "sad",
+      "scenes": [
+        "14",
+        "E1"
+      ],
+      "master": "masters/n04_sad.png",
+      "full": "full/n04_sad.png",
+      "master_sha256": "a5efc919dfaa38f18fe93df579f28b3275e0439ad4b4450f7c298f029b2c2c41",
+      "full_sha256": "3cdc0053a733a002655c5242c933707ca5389b11a415dba1d1d3509949cdfb17",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          96.0,
+          92.0,
+          93.0
+        ],
+        "trousers": [
+          76.0,
+          72.0,
+          73.0
+        ],
+        "skin": [
+          193.0,
+          152.0,
+          129.0
+        ],
+        "shoes": [
+          91.0,
+          88.0,
+          87.0
+        ],
+        "hair_shadow": [
+          86.0,
+          71.0,
+          58.0
+        ],
+        "hair_mid": [
+          125.0,
+          106.0,
+          90.0
+        ],
+        "hair_highlight": [
+          152.0,
+          132.0,
+          114.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          95.0,
+          92.0,
+          92.0
+        ],
+        "trousers": [
+          59.0,
+          56.0,
+          56.0
+        ],
+        "skin": [
+          198.0,
+          158.0,
+          133.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          81.0,
+          65.0,
+          50.0
+        ],
+        "hair_mid": [
+          117.0,
+          96.0,
+          78.0
+        ],
+        "hair_highlight": [
+          144.0,
+          120.2,
+          99.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n04_sad_waist.png",
+          "resource_key": "n04_sad_waist",
+          "game_path": "assets/characters/nikita/n04_sad_waist.png",
+          "crop_box": [
+            0,
+            146,
+            1024,
+            1076
+          ],
+          "sha256": "ba715981fe38d5fc2e709c50c1f23578df50bb3ba06eb1c51b102fada98ff091",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "n04_surprised",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N04",
+      "emotion": "surprised",
+      "scenes": [
+        "04",
+        "14"
+      ],
+      "master": "masters/n04_surprised.png",
+      "full": "full/n04_surprised.png",
+      "master_sha256": "ce1155544a536f46d0f1033aa08ee5e72d7488aa0ca381095e4b8964edf39802",
+      "full_sha256": "b782f404ea34d07284b9d8b1527fe1a8ec6b5e4d9ffac131c4d8cc41e7c9d84a",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          99.0,
+          95.0,
+          96.0
+        ],
+        "trousers": [
+          76.0,
+          73.0,
+          74.0
+        ],
+        "skin": [
+          200.0,
+          159.0,
+          136.0
+        ],
+        "shoes": [
+          99.0,
+          95.0,
+          96.0
+        ],
+        "hair_shadow": [
+          88.0,
+          72.0,
+          60.0
+        ],
+        "hair_mid": [
+          131.0,
+          111.0,
+          95.0
+        ],
+        "hair_highlight": [
+          159.0,
+          138.0,
+          119.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          95.0,
+          92.0,
+          92.0
+        ],
+        "trousers": [
+          58.0,
+          55.0,
+          56.0
+        ],
+        "skin": [
+          199.0,
+          160.0,
+          134.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          81.0,
+          65.0,
+          50.0
+        ],
+        "hair_mid": [
+          117.0,
+          96.0,
+          78.0
+        ],
+        "hair_highlight": [
+          144.0,
+          122.0,
+          100.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n04_surprised_waist.png",
+          "resource_key": "n04_surprised_waist",
+          "game_path": "assets/characters/nikita/n04_surprised_waist.png",
+          "crop_box": [
+            0,
+            146,
+            1024,
+            1076
+          ],
+          "sha256": "dc47e71c99c5c8d47a377018c336ef1caa5c0979f960e9586100d9631352eb08",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "n05_normal",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N05",
+      "emotion": "normal",
+      "scenes": [
+        "25"
+      ],
+      "master": "masters/n05_normal.png",
+      "full": "full/n05_normal.png",
+      "master_sha256": "d89962d5c096174c2e02af98d0274f77ad87f0ea878abbf7b49122941e121b09",
+      "full_sha256": "c52de1580d536235c2acaaf1c10131a8f6dea70e44f398e7116dc7a7a68e1e9e",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          90.0,
+          87.0,
+          87.0
+        ],
+        "trousers": [
+          65.0,
+          61.0,
+          63.0
+        ],
+        "skin": [
+          196.0,
+          157.0,
+          134.0
+        ],
+        "shoes": [
+          81.0,
+          78.0,
+          78.0
+        ],
+        "hair_shadow": [
+          85.0,
+          69.0,
+          55.0
+        ],
+        "hair_mid": [
+          119.0,
+          99.0,
+          81.0
+        ],
+        "hair_highlight": [
+          146.0,
+          123.0,
+          103.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          95.0,
+          92.0,
+          92.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          78.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n05_normal_waist.png",
+          "resource_key": "n05_normal_waist",
+          "game_path": "assets/characters/nikita/n05_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "67cc02167cac5ed1aa8708e7802f8047680477d649bb67251395f80780972baf",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "n05_sad",
+      "character": "Никита",
+      "slug": "nikita_vorontsov",
+      "pose": "N05",
+      "emotion": "sad",
+      "scenes": [
+        "25"
+      ],
+      "master": "masters/n05_sad.png",
+      "full": "full/n05_sad.png",
+      "master_sha256": "db080026922e049671232c20016ed363f0c465e0577df9256577c162d49ef288",
+      "full_sha256": "2ce6a1a1a1897096a6e7950f2f5d36fb41c8b4be140d84a70a9aafc3fb47a357",
+      "alpha_identical": true,
+      "color_before": {
+        "sweater": [
+          97.0,
+          94.0,
+          94.0
+        ],
+        "trousers": [
+          75.0,
+          71.0,
+          73.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          135.0
+        ],
+        "shoes": [
+          87.0,
+          85.0,
+          85.0
+        ],
+        "hair_shadow": [
+          84.0,
+          69.0,
+          56.0
+        ],
+        "hair_mid": [
+          125.0,
+          107.0,
+          90.0
+        ],
+        "hair_highlight": [
+          157.0,
+          138.0,
+          118.0
+        ]
+      },
+      "color_after": {
+        "sweater": [
+          95.0,
+          92.0,
+          92.0
+        ],
+        "trousers": [
+          59.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          198.0,
+          160.0,
+          134.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          81.8,
+          65.0,
+          50.0
+        ],
+        "hair_mid": [
+          116.0,
+          96.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "target_color": {
+        "sweater": [
+          96.0,
+          93.0,
+          93.0
+        ],
+        "trousers": [
+          57.0,
+          54.0,
+          55.0
+        ],
+        "skin": [
+          197.0,
+          158.0,
+          132.0
+        ],
+        "shoes": [
+          73.0,
+          71.0,
+          70.0
+        ],
+        "hair_shadow": [
+          82.0,
+          66.0,
+          51.0
+        ],
+        "hair_mid": [
+          116.0,
+          95.0,
+          77.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          99.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/nikita/n05_sad_full.png",
+          "resource_key": "n05_sad_full",
+          "game_path": "assets/characters/nikita/n05_sad_full.png",
+          "crop_box": null,
+          "sha256": "2ce6a1a1a1897096a6e7950f2f5d36fb41c8b4be140d84a70a9aafc3fb47a357",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/nikita/n05_sad_waist.png",
+          "resource_key": "n05_sad_waist",
+          "game_path": "assets/characters/nikita/n05_sad_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "e48529da2aa6dbffc9aa98769c76247dbeaf7057ef3e21a7ca92d071015bb918",
+          "exact_crop_verified": true
+        }
+      ]
+    }
+  ],
+  "approval": {
+    "date": "2026-11-04",
+    "status": "approved",
+    "user_instruction": "в сессии \"картинки\" мы сделали позы.изучи сессию, прими все фото персонажей и  добавь их в прототип",
+    "source_thread_title": "картинки",
+    "source_thread_id": "01a1989c-7990-7180-ae25-e77e8659bedc",
+    "scope": "All six final character sets after the second color review: 88 full-body sources, 60 basic PNGs in tone_matched_v2 and the 104 scene-ready game exports. Includes the accepted Nikita N01 happy and Sofya S05 arms-down substitutions. No image pixels changed by approval or integration."
+  }
+}

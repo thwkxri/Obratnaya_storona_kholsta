@@ -1,0 +1,1343 @@
+{
+  "date": "2026-11-04",
+  "status": "approved",
+  "reference": "characters/tone_matched_v1/tamara/full/t01_normal.png",
+  "source_count": 9,
+  "game_export_count": 13,
+  "tool": "built-in ImageGen",
+  "color_method": "Deterministic smooth RGB correction to approved normal, measured separately for hair shadows/midtones/highlights, skin, garments, footwear and Ilya notebook. Original alpha and spatial coordinates preserved.",
+  "assets": [
+    {
+      "id": "t01_happy",
+      "character": "Тамара",
+      "slug": "tamara",
+      "pose": "T01",
+      "emotion": "happy",
+      "scenes": [
+        "04Б"
+      ],
+      "master": "masters/t01_happy.png",
+      "full": "full/t01_happy.png",
+      "master_sha256": "170867f4e47ae781f158e15e1c23c11fc350bce4e6396dfd86e5650e74c9050b",
+      "full_sha256": "2895d0961cd13eec794b2914c3ebf4a01a5619661d827afb3239544a3984ac17",
+      "alpha_identical": true,
+      "color_before": {
+        "dress": [
+          71.0,
+          73.0,
+          98.0
+        ],
+        "apron": [
+          122.0,
+          108.0,
+          106.0
+        ],
+        "skin": [
+          206.0,
+          148.0,
+          118.0
+        ],
+        "shoes": [
+          61.0,
+          57.0,
+          57.0
+        ],
+        "hair_shadow": [
+          79.0,
+          59.0,
+          50.0
+        ],
+        "hair_mid": [
+          109.0,
+          85.0,
+          71.0
+        ],
+        "hair_highlight": [
+          149.0,
+          120.0,
+          103.0
+        ]
+      },
+      "color_after": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          206.0,
+          146.0,
+          116.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "target_color": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          204.0,
+          145.0,
+          114.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/tamara/t01_happy_waist.png",
+          "resource_key": "t01_happy_waist",
+          "game_path": "assets/characters/tamara/t01_happy_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "d77fea29224602252e55a7c2c76b4be5a1058ef0b22869c6586a5424dadd08b1",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "t01_sad",
+      "character": "Тамара",
+      "slug": "tamara",
+      "pose": "T01",
+      "emotion": "sad",
+      "scenes": [
+        "E1"
+      ],
+      "master": "masters/t01_sad.png",
+      "full": "full/t01_sad.png",
+      "master_sha256": "f6a3e9e088d3502952a507f44213efd4b2fee532cb4c3e085be2cc99c5ec21e1",
+      "full_sha256": "bcf0ab9db90cf1fa4463354813bf3104f680bd72ff9f7f330c83541e2398e4d5",
+      "alpha_identical": true,
+      "color_before": {
+        "dress": [
+          70.0,
+          73.0,
+          98.0
+        ],
+        "apron": [
+          122.0,
+          108.0,
+          107.0
+        ],
+        "skin": [
+          206.0,
+          146.0,
+          116.0
+        ],
+        "shoes": [
+          60.0,
+          56.0,
+          56.0
+        ],
+        "hair_shadow": [
+          75.0,
+          57.0,
+          47.0
+        ],
+        "hair_mid": [
+          107.0,
+          83.0,
+          69.0
+        ],
+        "hair_highlight": [
+          148.0,
+          118.0,
+          101.0
+        ]
+      },
+      "color_after": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          205.0,
+          146.0,
+          115.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "target_color": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          204.0,
+          145.0,
+          114.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/tamara/t01_sad_waist.png",
+          "resource_key": "t01_sad_waist",
+          "game_path": "assets/characters/tamara/t01_sad_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "4ce16c9c0d674b2eb0f9dc0e08cbf78858aaed4cd919d9e1e0f256b1f4892889",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "t02_normal",
+      "character": "Тамара",
+      "slug": "tamara",
+      "pose": "T02",
+      "emotion": "normal",
+      "scenes": [
+        "01"
+      ],
+      "master": "masters/t02_normal.png",
+      "full": "full/t02_normal.png",
+      "master_sha256": "2baf17d8831c52129ed38ce2f8119530c356ac2486c7581e67d98e2425738caa",
+      "full_sha256": "cbc95061f2de6df62857ce73df9cdcf70340f5531d89d27868790a2491cdf7bf",
+      "alpha_identical": true,
+      "color_before": {
+        "dress": [
+          71.0,
+          74.0,
+          98.0
+        ],
+        "apron": [
+          120.0,
+          107.0,
+          106.0
+        ],
+        "skin": [
+          209.0,
+          149.0,
+          119.0
+        ],
+        "shoes": [
+          64.0,
+          59.0,
+          59.0
+        ],
+        "hair_shadow": [
+          81.0,
+          62.0,
+          52.0
+        ],
+        "hair_mid": [
+          114.0,
+          88.0,
+          74.0
+        ],
+        "hair_highlight": [
+          154.0,
+          124.0,
+          107.0
+        ]
+      },
+      "color_after": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          101.0,
+          100.0
+        ],
+        "skin": [
+          206.0,
+          147.0,
+          116.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          71.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          101.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "target_color": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          204.0,
+          145.0,
+          114.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/tamara/t02_normal_full.png",
+          "resource_key": "t02_normal_full",
+          "game_path": "assets/characters/tamara/t02_normal_full.png",
+          "crop_box": null,
+          "sha256": "cbc95061f2de6df62857ce73df9cdcf70340f5531d89d27868790a2491cdf7bf",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/tamara/t02_normal_waist.png",
+          "resource_key": "t02_normal_waist",
+          "game_path": "assets/characters/tamara/t02_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "3c4480dd33f5dfecf50fded1c10fb898d1010fad48f47c39a65e2ebe65f5abfd",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "t03_normal",
+      "character": "Тамара",
+      "slug": "tamara",
+      "pose": "T03",
+      "emotion": "normal",
+      "scenes": [
+        "08А",
+        "11Б",
+        "21Б",
+        "E2"
+      ],
+      "master": "masters/t03_normal.png",
+      "full": "full/t03_normal.png",
+      "master_sha256": "4c436b1c65fbbc74eac5b2488abe544bbd553961be3a08646dbe517a3a3111bb",
+      "full_sha256": "07a89c3ae79757ad50124b5e1c91314527d65eb57a307fbeca11aae53a07a282",
+      "alpha_identical": true,
+      "color_before": {
+        "dress": [
+          69.0,
+          72.0,
+          98.0
+        ],
+        "apron": [
+          122.0,
+          108.0,
+          106.0
+        ],
+        "skin": [
+          211.0,
+          152.0,
+          120.0
+        ],
+        "shoes": [
+          60.0,
+          55.0,
+          55.0
+        ],
+        "hair_shadow": [
+          78.0,
+          59.0,
+          50.0
+        ],
+        "hair_mid": [
+          108.0,
+          84.0,
+          71.0
+        ],
+        "hair_highlight": [
+          153.0,
+          124.0,
+          106.0
+        ]
+      },
+      "color_after": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          206.0,
+          147.0,
+          116.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          95.0
+        ]
+      },
+      "target_color": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          204.0,
+          145.0,
+          114.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/tamara/t03_normal_waist.png",
+          "resource_key": "t03_normal_waist",
+          "game_path": "assets/characters/tamara/t03_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "65176b22166fa46af2ae55b9babbfce409fcf47b1a09dcebf4af5aacd81ff5f0",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "t04_angry",
+      "character": "Тамара",
+      "slug": "tamara",
+      "pose": "T04",
+      "emotion": "angry",
+      "scenes": [
+        "E6"
+      ],
+      "master": "masters/t04_angry.png",
+      "full": "full/t04_angry.png",
+      "master_sha256": "5ca36a939e3456ee9606ef8a5998ccf435cd16b2035f242c9b73fa159d9d8427",
+      "full_sha256": "9d08e6e907203c2aae09c5b46136b6aa74589c032f509a59f20f1042ffb58b5b",
+      "alpha_identical": true,
+      "color_before": {
+        "dress": [
+          73.0,
+          76.0,
+          102.0
+        ],
+        "apron": [
+          126.0,
+          111.0,
+          109.0
+        ],
+        "skin": [
+          210.0,
+          151.0,
+          121.0
+        ],
+        "shoes": [
+          62.0,
+          57.0,
+          57.0
+        ],
+        "hair_shadow": [
+          78.0,
+          60.0,
+          50.0
+        ],
+        "hair_mid": [
+          115.0,
+          90.0,
+          75.0
+        ],
+        "hair_highlight": [
+          160.0,
+          131.0,
+          112.0
+        ]
+      },
+      "color_after": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          101.0,
+          101.0
+        ],
+        "skin": [
+          207.0,
+          149.0,
+          117.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          77.0,
+          64.0
+        ],
+        "hair_highlight": [
+          141.0,
+          112.0,
+          95.0
+        ]
+      },
+      "target_color": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          204.0,
+          145.0,
+          114.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/tamara/t04_angry_waist.png",
+          "resource_key": "t04_angry_waist",
+          "game_path": "assets/characters/tamara/t04_angry_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "278e32fb4d11856179a25d98599df372bf248adc7a5005610008ee67db5eb37c",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "t04_normal",
+      "character": "Тамара",
+      "slug": "tamara",
+      "pose": "T04",
+      "emotion": "normal",
+      "scenes": [
+        "10В",
+        "23Б",
+        "24В",
+        "E6"
+      ],
+      "master": "masters/t04_normal.png",
+      "full": "full/t04_normal.png",
+      "master_sha256": "4bb4e97c654edcaff627176528f2ad476872c6cb844ecad3b881523735e3188e",
+      "full_sha256": "29784d37b01ef7ce211c105c6c242586a408bb492dc04e04b91ec7296cb463fe",
+      "alpha_identical": true,
+      "color_before": {
+        "dress": [
+          69.0,
+          72.0,
+          98.0
+        ],
+        "apron": [
+          122.0,
+          107.0,
+          106.0
+        ],
+        "skin": [
+          206.0,
+          148.0,
+          117.0
+        ],
+        "shoes": [
+          63.0,
+          58.0,
+          58.0
+        ],
+        "hair_shadow": [
+          74.0,
+          56.0,
+          47.0
+        ],
+        "hair_mid": [
+          108.0,
+          84.0,
+          70.0
+        ],
+        "hair_highlight": [
+          151.0,
+          121.0,
+          103.0
+        ]
+      },
+      "color_after": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          205.0,
+          146.0,
+          115.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "target_color": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          204.0,
+          145.0,
+          114.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/tamara/t04_normal_full.png",
+          "resource_key": "t04_normal_full",
+          "game_path": "assets/characters/tamara/t04_normal_full.png",
+          "crop_box": null,
+          "sha256": "29784d37b01ef7ce211c105c6c242586a408bb492dc04e04b91ec7296cb463fe",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/tamara/t04_normal_waist.png",
+          "resource_key": "t04_normal_waist",
+          "game_path": "assets/characters/tamara/t04_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "50511e713e283b9ef4e7acb4caa8c8bd2389e0d700604b5ab7701e25cd61c430",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "t04_surprised",
+      "character": "Тамара",
+      "slug": "tamara",
+      "pose": "T04",
+      "emotion": "surprised",
+      "scenes": [
+        "07",
+        "E6"
+      ],
+      "master": "masters/t04_surprised.png",
+      "full": "full/t04_surprised.png",
+      "master_sha256": "89647e02b2495c6415cc46a0395bb7c89ca11a981fee742efffd26e4af188319",
+      "full_sha256": "7f1575a1581378a34e6a8027636699d9d14afec157d47689757db5ee2096001f",
+      "alpha_identical": true,
+      "color_before": {
+        "dress": [
+          72.0,
+          77.0,
+          106.0
+        ],
+        "apron": [
+          129.0,
+          114.0,
+          112.0
+        ],
+        "skin": [
+          210.0,
+          152.0,
+          122.0
+        ],
+        "shoes": [
+          61.0,
+          57.0,
+          56.0
+        ],
+        "hair_shadow": [
+          79.0,
+          61.0,
+          50.0
+        ],
+        "hair_mid": [
+          116.0,
+          91.0,
+          76.0
+        ],
+        "hair_highlight": [
+          157.0,
+          127.0,
+          109.0
+        ]
+      },
+      "color_after": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          206.0,
+          147.0,
+          116.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "target_color": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          204.0,
+          145.0,
+          114.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/tamara/t04_surprised_full.png",
+          "resource_key": "t04_surprised_full",
+          "game_path": "assets/characters/tamara/t04_surprised_full.png",
+          "crop_box": null,
+          "sha256": "7f1575a1581378a34e6a8027636699d9d14afec157d47689757db5ee2096001f",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/tamara/t04_surprised_waist.png",
+          "resource_key": "t04_surprised_waist",
+          "game_path": "assets/characters/tamara/t04_surprised_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "a56537eba67de0adc6942e01133198e159a4fe16dbbf772c5d4a571cf7f871ff",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "t05_normal",
+      "character": "Тамара",
+      "slug": "tamara",
+      "pose": "T05",
+      "emotion": "normal",
+      "scenes": [
+        "18",
+        "18А",
+        "25"
+      ],
+      "master": "masters/t05_normal.png",
+      "full": "full/t05_normal.png",
+      "master_sha256": "5319671aabe99e81c0d6cf4482b34d52d123754c18079c2885b73e4d3f3ba23f",
+      "full_sha256": "7967f7f4eb89463d2aed1d4e605c514e69fd8b1ca092d3eafe316d1039455de6",
+      "alpha_identical": true,
+      "color_before": {
+        "dress": [
+          68.0,
+          71.0,
+          94.0
+        ],
+        "apron": [
+          117.0,
+          104.0,
+          102.0
+        ],
+        "skin": [
+          202.0,
+          146.0,
+          117.0
+        ],
+        "shoes": [
+          59.0,
+          55.0,
+          55.0
+        ],
+        "hair_shadow": [
+          75.0,
+          58.0,
+          48.0
+        ],
+        "hair_mid": [
+          109.0,
+          86.0,
+          72.0
+        ],
+        "hair_highlight": [
+          147.0,
+          119.0,
+          103.0
+        ]
+      },
+      "color_after": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          101.0,
+          101.0
+        ],
+        "skin": [
+          204.0,
+          146.0,
+          115.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "target_color": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          204.0,
+          145.0,
+          114.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/tamara/t05_normal_full.png",
+          "resource_key": "t05_normal_full",
+          "game_path": "assets/characters/tamara/t05_normal_full.png",
+          "crop_box": null,
+          "sha256": "7967f7f4eb89463d2aed1d4e605c514e69fd8b1ca092d3eafe316d1039455de6",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/tamara/t05_normal_waist.png",
+          "resource_key": "t05_normal_waist",
+          "game_path": "assets/characters/tamara/t05_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "84475402704f2771c4b3fca6175c80eac27665f80a06e75f479a951b13e64d0e",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "t05_sad",
+      "character": "Тамара",
+      "slug": "tamara",
+      "pose": "T05",
+      "emotion": "sad",
+      "scenes": [
+        "18",
+        "18А"
+      ],
+      "master": "masters/t05_sad.png",
+      "full": "full/t05_sad.png",
+      "master_sha256": "0cf4f855f4691db84d52a344d3434cf130c3701203040f5305c9fcc0448a0928",
+      "full_sha256": "90b218cc2489bc9fad610823e13fa5e87565f2e5fcf2f82c04aadcbe71d30abc",
+      "alpha_identical": true,
+      "color_before": {
+        "dress": [
+          71.0,
+          76.0,
+          104.0
+        ],
+        "apron": [
+          121.0,
+          108.0,
+          108.0
+        ],
+        "skin": [
+          204.0,
+          147.0,
+          119.0
+        ],
+        "shoes": [
+          62.0,
+          59.0,
+          60.0
+        ],
+        "hair_shadow": [
+          74.0,
+          57.0,
+          49.0
+        ],
+        "hair_mid": [
+          111.0,
+          90.0,
+          78.0
+        ],
+        "hair_highlight": [
+          146.0,
+          122.0,
+          109.0
+        ]
+      },
+      "color_after": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          101.0,
+          100.0
+        ],
+        "skin": [
+          204.0,
+          145.0,
+          115.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "target_color": {
+        "dress": [
+          65.0,
+          68.0,
+          93.0
+        ],
+        "apron": [
+          115.0,
+          102.0,
+          101.0
+        ],
+        "skin": [
+          204.0,
+          145.0,
+          114.0
+        ],
+        "shoes": [
+          55.0,
+          51.0,
+          52.0
+        ],
+        "hair_shadow": [
+          70.0,
+          52.0,
+          43.0
+        ],
+        "hair_mid": [
+          100.0,
+          76.0,
+          63.0
+        ],
+        "hair_highlight": [
+          140.0,
+          111.0,
+          94.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/tamara/t05_sad_waist.png",
+          "resource_key": "t05_sad_waist",
+          "game_path": "assets/characters/tamara/t05_sad_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "06bb7f6f349f4847d75db987625f41de7fa6a26d547ae4e16f40682bb142fed3",
+          "exact_crop_verified": true
+        }
+      ]
+    }
+  ],
+  "approval": {
+    "date": "2026-11-04",
+    "status": "approved",
+    "user_instruction": "в сессии \"картинки\" мы сделали позы.изучи сессию, прими все фото персонажей и  добавь их в прототип",
+    "source_thread_title": "картинки",
+    "source_thread_id": "01a1989c-7990-7180-ae25-e77e8659bedc",
+    "scope": "All six final character sets after the second color review: 88 full-body sources, 60 basic PNGs in tone_matched_v2 and the 104 scene-ready game exports. Includes the accepted Nikita N01 happy and Sofya S05 arms-down substitutions. No image pixels changed by approval or integration."
+  }
+}

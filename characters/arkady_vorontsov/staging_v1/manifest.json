@@ -1,0 +1,1153 @@
+{
+  "date": "2026-11-04",
+  "status": "approved",
+  "reference": "characters/tone_matched_v1/arkady_vorontsov/full/a01_normal.png",
+  "source_count": 7,
+  "game_export_count": 9,
+  "tool": "built-in ImageGen",
+  "color_method": "Deterministic smooth RGB correction to approved normal, measured separately for hair shadows/midtones/highlights, skin, garments, footwear and Ilya notebook. Original alpha and spatial coordinates preserved.",
+  "assets": [
+    {
+      "id": "a02_normal",
+      "character": "Аркадий",
+      "slug": "arkady_vorontsov",
+      "pose": "A02",
+      "emotion": "normal",
+      "scenes": [
+        "10В",
+        "21А",
+        "21Б"
+      ],
+      "master": "masters/a02_normal.png",
+      "full": "full/a02_normal.png",
+      "master_sha256": "bcb221a32b1c5188bfdaf5dee70e8d59cd8136667a1aea8d32a9e5c5e7a49e8d",
+      "full_sha256": "76fb4ac542f1c9bbf5ffb87fa9278ee70637fd6c2d902323600f18a6b7c27c99",
+      "alpha_identical": true,
+      "color_before": {
+        "jacket": [
+          60.0,
+          62.0,
+          51.0
+        ],
+        "shirt": [
+          230.0,
+          216.0,
+          201.0
+        ],
+        "trousers": [
+          67.0,
+          62.0,
+          63.0
+        ],
+        "skin": [
+          211.0,
+          163.0,
+          129.0
+        ],
+        "shoes": [
+          72.0,
+          51.0,
+          41.0
+        ],
+        "hair_shadow": [
+          62.0,
+          51.0,
+          42.0
+        ],
+        "hair_mid": [
+          92.0,
+          77.0,
+          64.0
+        ],
+        "hair_highlight": [
+          137.0,
+          117.0,
+          100.0
+        ]
+      },
+      "color_after": {
+        "jacket": [
+          53.0,
+          55.0,
+          45.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          211.0,
+          162.0,
+          126.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          57.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "target_color": {
+        "jacket": [
+          53.0,
+          55.0,
+          45.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          210.0,
+          161.0,
+          126.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          58.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/arkady/a02_normal_full.png",
+          "resource_key": "a02_normal_full",
+          "game_path": "assets/characters/arkady/a02_normal_full.png",
+          "crop_box": null,
+          "sha256": "76fb4ac542f1c9bbf5ffb87fa9278ee70637fd6c2d902323600f18a6b7c27c99",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/arkady/a02_normal_waist.png",
+          "resource_key": "a02_normal_waist",
+          "game_path": "assets/characters/arkady/a02_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            890
+          ],
+          "sha256": "9ad63ee978c4f2b8b19300be9467806c8c140c47a7c565374b5e1a6e255c83aa",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "a03_surprised",
+      "character": "Аркадий",
+      "slug": "arkady_vorontsov",
+      "pose": "A03",
+      "emotion": "surprised",
+      "scenes": [
+        "07"
+      ],
+      "master": "masters/a03_surprised.png",
+      "full": "full/a03_surprised.png",
+      "master_sha256": "c5620949dbcbe47317583234ad8b6e866c5a2184632483abd122bf68d743b869",
+      "full_sha256": "d865a2fad9780c6780f23b3225a8575ebe49ef8e2370014b55d95abfed3acccd",
+      "alpha_identical": true,
+      "color_before": {
+        "jacket": [
+          58.0,
+          59.0,
+          49.0
+        ],
+        "shirt": [
+          236.0,
+          222.0,
+          208.0
+        ],
+        "trousers": [
+          70.0,
+          63.0,
+          64.0
+        ],
+        "skin": [
+          215.0,
+          165.0,
+          129.0
+        ],
+        "shoes": [
+          83.0,
+          55.0,
+          42.0
+        ],
+        "hair_shadow": [
+          56.0,
+          43.0,
+          34.0
+        ],
+        "hair_mid": [
+          93.0,
+          74.0,
+          60.0
+        ],
+        "hair_highlight": [
+          144.0,
+          121.0,
+          102.0
+        ]
+      },
+      "color_after": {
+        "jacket": [
+          54.0,
+          56.0,
+          46.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          212.0,
+          162.0,
+          127.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          58.0,
+          47.0,
+          37.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          131.0,
+          111.0,
+          94.0
+        ]
+      },
+      "target_color": {
+        "jacket": [
+          53.0,
+          55.0,
+          45.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          210.0,
+          161.0,
+          126.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          58.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/arkady/a03_surprised_full.png",
+          "resource_key": "a03_surprised_full",
+          "game_path": "assets/characters/arkady/a03_surprised_full.png",
+          "crop_box": null,
+          "sha256": "d865a2fad9780c6780f23b3225a8575ebe49ef8e2370014b55d95abfed3acccd",
+          "exact_crop_verified": false
+        }
+      ]
+    },
+    {
+      "id": "a04_angry",
+      "character": "Аркадий",
+      "slug": "arkady_vorontsov",
+      "pose": "A04",
+      "emotion": "angry",
+      "scenes": [
+        "04Б",
+        "27А",
+        "E2"
+      ],
+      "master": "masters/a04_angry.png",
+      "full": "full/a04_angry.png",
+      "master_sha256": "1ccbaa19faa43da7f0b4d5e982e9d391f42b42983118fd6adde3140e02032bb2",
+      "full_sha256": "4a6beb23b0ec11062c6eda8ac393bde193855ddb1e1e52617437f9789e17443c",
+      "alpha_identical": true,
+      "color_before": {
+        "jacket": [
+          60.0,
+          61.0,
+          52.0
+        ],
+        "shirt": [
+          226.0,
+          208.0,
+          192.0
+        ],
+        "trousers": [
+          66.0,
+          61.0,
+          62.0
+        ],
+        "skin": [
+          210.0,
+          155.0,
+          122.0
+        ],
+        "shoes": [
+          81.0,
+          59.0,
+          48.0
+        ],
+        "hair_shadow": [
+          56.0,
+          45.0,
+          38.0
+        ],
+        "hair_mid": [
+          94.0,
+          77.0,
+          66.0
+        ],
+        "hair_highlight": [
+          143.0,
+          122.0,
+          105.0
+        ]
+      },
+      "color_after": {
+        "jacket": [
+          54.0,
+          56.0,
+          46.0
+        ],
+        "shirt": [
+          233.0,
+          218.0,
+          203.0
+        ],
+        "trousers": [
+          60.0,
+          56.0,
+          56.0
+        ],
+        "skin": [
+          211.0,
+          161.0,
+          127.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          57.0,
+          46.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          131.0,
+          110.0,
+          94.0
+        ]
+      },
+      "target_color": {
+        "jacket": [
+          53.0,
+          55.0,
+          45.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          210.0,
+          161.0,
+          126.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          58.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/arkady/a04_angry_waist.png",
+          "resource_key": "a04_angry_waist",
+          "game_path": "assets/characters/arkady/a04_angry_waist.png",
+          "crop_box": [
+            0,
+            95,
+            1024,
+            1119
+          ],
+          "sha256": "0f2a75c9e80a9c03143b0840b1237fada44d583333a792ef33a0db29e0ba35c9",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "a04_normal",
+      "character": "Аркадий",
+      "slug": "arkady_vorontsov",
+      "pose": "A04",
+      "emotion": "normal",
+      "scenes": [
+        "04",
+        "14",
+        "27",
+        "27А",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "E8",
+        "P"
+      ],
+      "master": "masters/a04_normal.png",
+      "full": "full/a04_normal.png",
+      "master_sha256": "d222350239f4741757a90eeca8bae6ec60436355956f8be3cd7a4ea2e5ad516d",
+      "full_sha256": "bb7a01463118682c7e51209ec98ab3078c1587c92017d55b4b7af5cbab4fac8c",
+      "alpha_identical": true,
+      "color_before": {
+        "jacket": [
+          55.0,
+          56.0,
+          48.0
+        ],
+        "shirt": [
+          225.0,
+          209.0,
+          194.0
+        ],
+        "trousers": [
+          58.0,
+          53.0,
+          53.0
+        ],
+        "skin": [
+          206.0,
+          157.0,
+          126.0
+        ],
+        "shoes": [
+          70.0,
+          51.0,
+          42.0
+        ],
+        "hair_shadow": [
+          57.0,
+          47.0,
+          40.0
+        ],
+        "hair_mid": [
+          88.0,
+          73.0,
+          62.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          94.4
+        ]
+      },
+      "color_after": {
+        "jacket": [
+          56.0,
+          58.0,
+          48.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          60.0,
+          55.0,
+          55.0
+        ],
+        "skin": [
+          210.0,
+          161.0,
+          125.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          58.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          88.0,
+          72.0,
+          60.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "target_color": {
+        "jacket": [
+          53.0,
+          55.0,
+          45.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          210.0,
+          161.0,
+          126.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          58.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/arkady/a04_normal_waist.png",
+          "resource_key": "a04_normal_waist",
+          "game_path": "assets/characters/arkady/a04_normal_waist.png",
+          "crop_box": [
+            0,
+            95,
+            1024,
+            1119
+          ],
+          "sha256": "99a6044ba7a6a21382e415a48e083ae1e50f705a634269a50ce482b243fc334f",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "a04_sad",
+      "character": "Аркадий",
+      "slug": "arkady_vorontsov",
+      "pose": "A04",
+      "emotion": "sad",
+      "scenes": [
+        "04",
+        "27",
+        "E1",
+        "E2"
+      ],
+      "master": "masters/a04_sad.png",
+      "full": "full/a04_sad.png",
+      "master_sha256": "86055731778684e585470851d185822d4855d0a9cffeeac04168690b188b4fb4",
+      "full_sha256": "d8357be4e8fef3c4ba2a7ee7f6d939842e199e82b394419dc8b9f80bad9aa019",
+      "alpha_identical": true,
+      "color_before": {
+        "jacket": [
+          60.0,
+          61.0,
+          53.0
+        ],
+        "shirt": [
+          224.0,
+          207.0,
+          193.0
+        ],
+        "trousers": [
+          72.0,
+          64.0,
+          66.0
+        ],
+        "skin": [
+          205.0,
+          155.0,
+          124.0
+        ],
+        "shoes": [
+          82.0,
+          60.0,
+          50.0
+        ],
+        "hair_shadow": [
+          62.0,
+          50.0,
+          43.0
+        ],
+        "hair_mid": [
+          94.0,
+          78.0,
+          68.0
+        ],
+        "hair_highlight": [
+          132.0,
+          113.0,
+          100.0
+        ]
+      },
+      "color_after": {
+        "jacket": [
+          56.0,
+          58.0,
+          47.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          210.0,
+          160.0,
+          126.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          58.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "target_color": {
+        "jacket": [
+          53.0,
+          55.0,
+          45.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          210.0,
+          161.0,
+          126.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          58.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/arkady/a04_sad_waist.png",
+          "resource_key": "a04_sad_waist",
+          "game_path": "assets/characters/arkady/a04_sad_waist.png",
+          "crop_box": [
+            0,
+            95,
+            1024,
+            1119
+          ],
+          "sha256": "5fe36fe234dc7970e9bd1e6687bed8d5f19f4296b33b07cf7ec99bf3ad8b403c",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "a05_happy",
+      "character": "Аркадий",
+      "slug": "arkady_vorontsov",
+      "pose": "A05",
+      "emotion": "happy",
+      "scenes": [
+        "02А"
+      ],
+      "master": "masters/a05_happy.png",
+      "full": "full/a05_happy.png",
+      "master_sha256": "a0dcf78fa1ee480bb44beda5a685f586fa3c28f31e7affaa1a2fac88fc4c5b2f",
+      "full_sha256": "0bcbb68562974930ef3248d4fb509b586f512987efede80109812c1209ac1e7f",
+      "alpha_identical": true,
+      "color_before": {
+        "jacket": [
+          62.0,
+          63.0,
+          53.0
+        ],
+        "shirt": [
+          232.0,
+          215.0,
+          201.0
+        ],
+        "trousers": [
+          71.0,
+          65.0,
+          66.0
+        ],
+        "skin": [
+          214.0,
+          160.0,
+          125.0
+        ],
+        "shoes": [
+          79.0,
+          55.0,
+          44.0
+        ],
+        "hair_shadow": [
+          59.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          94.0,
+          77.0,
+          64.0
+        ],
+        "hair_highlight": [
+          138.0,
+          117.0,
+          100.0
+        ]
+      },
+      "color_after": {
+        "jacket": [
+          53.0,
+          55.0,
+          46.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          211.0,
+          162.0,
+          127.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          57.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          58.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "target_color": {
+        "jacket": [
+          53.0,
+          55.0,
+          45.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          210.0,
+          161.0,
+          126.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          58.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/arkady/a05_happy_waist.png",
+          "resource_key": "a05_happy_waist",
+          "game_path": "assets/characters/arkady/a05_happy_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "e85bdd854390be71d321b38fa1c10b4e53c3c404816ce0f4719dd95234c5dc36",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "a05_normal",
+      "character": "Аркадий",
+      "slug": "arkady_vorontsov",
+      "pose": "A05",
+      "emotion": "normal",
+      "scenes": [
+        "02",
+        "02А",
+        "28",
+        "28А",
+        "28Б"
+      ],
+      "master": "masters/a05_normal.png",
+      "full": "full/a05_normal.png",
+      "master_sha256": "c2bc565b4dba0feefc016adc4539088154cef9b213214144a697c375e8316250",
+      "full_sha256": "eaad428584e3a581edd325206e4f38dac4c779e34fa1dcbe5c0d7dbe158b831a",
+      "alpha_identical": true,
+      "color_before": {
+        "jacket": [
+          60.0,
+          61.0,
+          52.0
+        ],
+        "shirt": [
+          231.0,
+          215.0,
+          202.0
+        ],
+        "trousers": [
+          69.0,
+          62.0,
+          63.0
+        ],
+        "skin": [
+          214.0,
+          163.0,
+          129.0
+        ],
+        "shoes": [
+          78.0,
+          53.0,
+          43.0
+        ],
+        "hair_shadow": [
+          61.0,
+          48.0,
+          40.0
+        ],
+        "hair_mid": [
+          93.0,
+          76.0,
+          64.0
+        ],
+        "hair_highlight": [
+          135.0,
+          114.0,
+          99.0
+        ]
+      },
+      "color_after": {
+        "jacket": [
+          53.0,
+          55.0,
+          46.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          210.0,
+          161.0,
+          127.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          57.2,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "target_color": {
+        "jacket": [
+          53.0,
+          55.0,
+          45.0
+        ],
+        "shirt": [
+          232.0,
+          218.0,
+          202.0
+        ],
+        "trousers": [
+          61.0,
+          56.0,
+          57.0
+        ],
+        "skin": [
+          210.0,
+          161.0,
+          126.0
+        ],
+        "shoes": [
+          65.0,
+          46.0,
+          36.0
+        ],
+        "hair_shadow": [
+          58.0,
+          47.0,
+          38.0
+        ],
+        "hair_mid": [
+          87.0,
+          72.0,
+          59.0
+        ],
+        "hair_highlight": [
+          130.0,
+          110.0,
+          93.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/arkady/a05_normal_full.png",
+          "resource_key": "a05_normal_full",
+          "game_path": "assets/characters/arkady/a05_normal_full.png",
+          "crop_box": null,
+          "sha256": "eaad428584e3a581edd325206e4f38dac4c779e34fa1dcbe5c0d7dbe158b831a",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/arkady/a05_normal_waist.png",
+          "resource_key": "a05_normal_waist",
+          "game_path": "assets/characters/arkady/a05_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "87ec54fbbc785c73ccff66bff21cce656bdc80f133bf0fea8d4015f5821d4823",
+          "exact_crop_verified": true
+        }
+      ]
+    }
+  ],
+  "approval": {
+    "date": "2026-11-04",
+    "status": "approved",
+    "user_instruction": "в сессии \"картинки\" мы сделали позы.изучи сессию, прими все фото персонажей и  добавь их в прототип",
+    "source_thread_title": "картинки",
+    "source_thread_id": "01a1989c-7990-7180-ae25-e77e8659bedc",
+    "scope": "All six final character sets after the second color review: 88 full-body sources, 60 basic PNGs in tone_matched_v2 and the 104 scene-ready game exports. Includes the accepted Nikita N01 happy and Sofya S05 arms-down substitutions. No image pixels changed by approval or integration."
+  }
+}

@@ -1,0 +1,903 @@
+{
+  "date": "2026-11-04",
+  "status": "approved",
+  "reference": "characters/tone_matched_v1/sofya_lebedeva/full/s01_normal.png",
+  "source_count": 6,
+  "game_export_count": 8,
+  "tool": "built-in ImageGen",
+  "color_method": "Deterministic smooth RGB correction to approved normal, measured separately for hair shadows/midtones/highlights, skin, garments, footwear and Ilya notebook. Original alpha and spatial coordinates preserved.",
+  "assets": [
+    {
+      "id": "s02_normal",
+      "character": "Софья",
+      "slug": "sofya_lebedeva",
+      "pose": "S02",
+      "emotion": "normal",
+      "scenes": [
+        "21",
+        "21Б",
+        "28",
+        "28А",
+        "28Б"
+      ],
+      "master": "masters/s02_normal.png",
+      "full": "full/s02_normal.png",
+      "master_sha256": "e6de4ed539cf574bc4a0093a6367842a605f6bd99a902fcd87be7798f5084150",
+      "full_sha256": "bae564d747397357a0d8fe00fd9544b16ae2d71fa91d575a8e5ec4170302d0d4",
+      "alpha_identical": true,
+      "color_before": {
+        "blouse": [
+          202.0,
+          175.0,
+          155.0
+        ],
+        "trousers": [
+          99.0,
+          100.0,
+          112.0
+        ],
+        "skin": [
+          215.0,
+          161.0,
+          127.0
+        ],
+        "shoes": [
+          101.0,
+          89.0,
+          83.0
+        ],
+        "hair_shadow": [
+          94.0,
+          60.0,
+          35.0
+        ],
+        "hair_mid": [
+          161.0,
+          116.0,
+          76.0
+        ],
+        "hair_highlight": [
+          223.0,
+          174.0,
+          130.0
+        ]
+      },
+      "color_after": {
+        "blouse": [
+          207.0,
+          183.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          215.0,
+          158.0,
+          120.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.0,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          121.0,
+          76.0
+        ],
+        "hair_highlight": [
+          228.0,
+          179.0,
+          132.0
+        ]
+      },
+      "target_color": {
+        "blouse": [
+          207.0,
+          183.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          216.0,
+          159.0,
+          122.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.2,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          122.0,
+          76.0
+        ],
+        "hair_highlight": [
+          228.0,
+          179.0,
+          132.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/sofia/s02_normal_full.png",
+          "resource_key": "s02_normal_full",
+          "game_path": "assets/characters/sofia/s02_normal_full.png",
+          "crop_box": null,
+          "sha256": "bae564d747397357a0d8fe00fd9544b16ae2d71fa91d575a8e5ec4170302d0d4",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/sofia/s02_normal_waist.png",
+          "resource_key": "s02_normal_waist",
+          "game_path": "assets/characters/sofia/s02_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "9bd8a35299e31b441400dde0f011bc3aaf853625fd170d27b09a6d31f69270fd",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "s03_normal",
+      "character": "Софья",
+      "slug": "sofya_lebedeva",
+      "pose": "S03",
+      "emotion": "normal",
+      "scenes": [
+        "02",
+        "02Б",
+        "20",
+        "24"
+      ],
+      "master": "masters/s03_normal.png",
+      "full": "full/s03_normal.png",
+      "master_sha256": "8226703391fe4f2a038e48f66f9856823e824ffc42a79d3f35b05f966412fd2b",
+      "full_sha256": "47170b05adec4ef6dd10ba8a4f93f70c4162328547864b3b6a02f365c7c1306a",
+      "alpha_identical": true,
+      "color_before": {
+        "blouse": [
+          203.0,
+          178.0,
+          158.0
+        ],
+        "trousers": [
+          100.0,
+          102.0,
+          115.0
+        ],
+        "skin": [
+          219.0,
+          163.0,
+          124.0
+        ],
+        "shoes": [
+          103.0,
+          93.0,
+          93.0
+        ],
+        "hair_shadow": [
+          106.0,
+          67.0,
+          32.0
+        ],
+        "hair_mid": [
+          170.0,
+          121.0,
+          72.0
+        ],
+        "hair_highlight": [
+          220.0,
+          169.0,
+          113.0
+        ]
+      },
+      "color_after": {
+        "blouse": [
+          207.0,
+          183.0,
+          160.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          219.0,
+          161.0,
+          125.0
+        ],
+        "shoes": [
+          89.0,
+          78.0,
+          71.0
+        ],
+        "hair_shadow": [
+          98.0,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          122.0,
+          76.0
+        ],
+        "hair_highlight": [
+          227.0,
+          177.0,
+          129.0
+        ]
+      },
+      "target_color": {
+        "blouse": [
+          207.0,
+          183.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          216.0,
+          159.0,
+          122.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.2,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          122.0,
+          76.0
+        ],
+        "hair_highlight": [
+          228.0,
+          179.0,
+          132.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "full",
+          "path": "exports/assets/characters/sofia/s03_normal_full.png",
+          "resource_key": "s03_normal_full",
+          "game_path": "assets/characters/sofia/s03_normal_full.png",
+          "crop_box": null,
+          "sha256": "47170b05adec4ef6dd10ba8a4f93f70c4162328547864b3b6a02f365c7c1306a",
+          "exact_crop_verified": false
+        },
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/sofia/s03_normal_waist.png",
+          "resource_key": "s03_normal_waist",
+          "game_path": "assets/characters/sofia/s03_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "e16f0193f22a5673f43e321d5802b5a336e899ca063e40cbd9965fb828d1ee93",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "s04_normal",
+      "character": "Софья",
+      "slug": "sofya_lebedeva",
+      "pose": "S04",
+      "emotion": "normal",
+      "scenes": [
+        "04",
+        "04Б",
+        "14",
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E8"
+      ],
+      "master": "masters/s04_normal.png",
+      "full": "full/s04_normal.png",
+      "master_sha256": "b59f4497a04d5d7d667159d610664e2637b462aff84c13a5841e5b2708de3d41",
+      "full_sha256": "532461b04e1e5b62aeaad660494fb15f9d3daeaf1bb5a42267b8d50a7c405c77",
+      "alpha_identical": true,
+      "color_before": {
+        "blouse": [
+          203.0,
+          179.0,
+          160.0
+        ],
+        "trousers": [
+          89.0,
+          90.0,
+          104.0
+        ],
+        "skin": [
+          214.0,
+          159.0,
+          124.0
+        ],
+        "shoes": [
+          115.0,
+          97.0,
+          87.0
+        ],
+        "hair_shadow": [
+          106.0,
+          67.0,
+          35.0
+        ],
+        "hair_mid": [
+          173.0,
+          125.0,
+          82.0
+        ],
+        "hair_highlight": [
+          222.0,
+          176.0,
+          131.0
+        ]
+      },
+      "color_after": {
+        "blouse": [
+          207.0,
+          183.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          217.0,
+          160.0,
+          123.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.0,
+          60.0,
+          29.0
+        ],
+        "hair_mid": [
+          170.0,
+          122.0,
+          76.0
+        ],
+        "hair_highlight": [
+          228.0,
+          179.0,
+          132.0
+        ]
+      },
+      "target_color": {
+        "blouse": [
+          207.0,
+          183.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          216.0,
+          159.0,
+          122.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.2,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          122.0,
+          76.0
+        ],
+        "hair_highlight": [
+          228.0,
+          179.0,
+          132.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/sofia/s04_normal_waist.png",
+          "resource_key": "s04_normal_waist",
+          "game_path": "assets/characters/sofia/s04_normal_waist.png",
+          "crop_box": [
+            0,
+            93,
+            1024,
+            1023
+          ],
+          "sha256": "ad7c774d39fda9461b6fb92dc25980a13c6caf371a437f174c4844994b7aabf3",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "s05_normal",
+      "character": "Софья",
+      "slug": "sofya_lebedeva",
+      "pose": "S05",
+      "emotion": "normal",
+      "scenes": [
+        "E5"
+      ],
+      "master": "masters/s05_normal.png",
+      "full": "full/s05_normal.png",
+      "master_sha256": "bc388f81f6c7bb9cc3356f25b287e47c63f15cfbcd255139a8bdee28113d8468",
+      "full_sha256": "7dd8a94d14c6cb18861c895ce2d9d3150145a385819735be2e3560eed57d5bf4",
+      "alpha_identical": true,
+      "color_before": {
+        "blouse": [
+          206.0,
+          181.0,
+          160.0
+        ],
+        "trousers": [
+          100.0,
+          101.0,
+          114.0
+        ],
+        "skin": [
+          217.0,
+          161.0,
+          124.0
+        ],
+        "shoes": [
+          102.0,
+          90.0,
+          85.0
+        ],
+        "hair_shadow": [
+          87.0,
+          55.0,
+          30.0
+        ],
+        "hair_mid": [
+          156.0,
+          113.0,
+          74.0
+        ],
+        "hair_highlight": [
+          215.0,
+          168.0,
+          119.0
+        ]
+      },
+      "color_after": {
+        "blouse": [
+          207.0,
+          182.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          217.0,
+          160.0,
+          123.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.0,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          122.0,
+          75.0
+        ],
+        "hair_highlight": [
+          225.0,
+          177.0,
+          129.0
+        ]
+      },
+      "target_color": {
+        "blouse": [
+          207.0,
+          183.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          216.0,
+          159.0,
+          122.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.2,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          122.0,
+          76.0
+        ],
+        "hair_highlight": [
+          228.0,
+          179.0,
+          132.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/sofia/s05_normal_waist.png",
+          "resource_key": "s05_normal_waist",
+          "game_path": "assets/characters/sofia/s05_normal_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "538c0d58ff9ce7420041da7a4998b8d607282261fb524f4feec11629a5eb3cad",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "s05_sad",
+      "character": "Софья",
+      "slug": "sofya_lebedeva",
+      "pose": "S05",
+      "emotion": "sad",
+      "scenes": [
+        "E5"
+      ],
+      "master": "masters/s05_sad.png",
+      "full": "full/s05_sad.png",
+      "master_sha256": "cfc2b0db8c8b2aff280eecc81f5d02ece6de5453d7e7d04f0a9ad46211929e62",
+      "full_sha256": "f6a55c36af69e1b203ee06e5d85e61588f3a41558ac11f1bba1f66d4416c2520",
+      "alpha_identical": true,
+      "color_before": {
+        "blouse": [
+          212.0,
+          185.0,
+          163.0
+        ],
+        "trousers": [
+          100.0,
+          102.0,
+          114.0
+        ],
+        "skin": [
+          215.0,
+          158.0,
+          121.0
+        ],
+        "shoes": [
+          105.0,
+          93.0,
+          86.0
+        ],
+        "hair_shadow": [
+          96.0,
+          64.0,
+          36.0
+        ],
+        "hair_mid": [
+          162.0,
+          117.0,
+          74.0
+        ],
+        "hair_highlight": [
+          220.0,
+          172.0,
+          120.0
+        ]
+      },
+      "color_after": {
+        "blouse": [
+          208.0,
+          183.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          215.0,
+          158.0,
+          121.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.0,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          122.0,
+          76.0
+        ],
+        "hair_highlight": [
+          227.0,
+          179.0,
+          130.0
+        ]
+      },
+      "target_color": {
+        "blouse": [
+          207.0,
+          183.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          216.0,
+          159.0,
+          122.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.2,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          122.0,
+          76.0
+        ],
+        "hair_highlight": [
+          228.0,
+          179.0,
+          132.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/sofia/s05_sad_waist.png",
+          "resource_key": "s05_sad_waist",
+          "game_path": "assets/characters/sofia/s05_sad_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "413653f3c85c2b3afad3dd1f046282f00fc6c5b470bb3c86d05918e714dee608",
+          "exact_crop_verified": true
+        }
+      ]
+    },
+    {
+      "id": "s05_surprised",
+      "character": "Софья",
+      "slug": "sofya_lebedeva",
+      "pose": "S05",
+      "emotion": "surprised",
+      "scenes": [
+        "E5"
+      ],
+      "master": "masters/s05_surprised.png",
+      "full": "full/s05_surprised.png",
+      "master_sha256": "b1572a9d9a361d5d88f8c21089c879e74906cd0ac4d8a3f326e87a25b86f1263",
+      "full_sha256": "12d35c9290b7b10666d1aba7f01649b411b852f613f7ccf777923bdcfd6540fa",
+      "alpha_identical": true,
+      "color_before": {
+        "blouse": [
+          210.0,
+          183.0,
+          163.0
+        ],
+        "trousers": [
+          98.0,
+          99.0,
+          110.0
+        ],
+        "skin": [
+          215.0,
+          160.0,
+          125.0
+        ],
+        "shoes": [
+          102.0,
+          90.0,
+          85.0
+        ],
+        "hair_shadow": [
+          87.0,
+          56.0,
+          33.0
+        ],
+        "hair_mid": [
+          157.0,
+          114.0,
+          75.0
+        ],
+        "hair_highlight": [
+          214.0,
+          167.0,
+          120.0
+        ]
+      },
+      "color_after": {
+        "blouse": [
+          207.0,
+          182.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          217.0,
+          160.0,
+          122.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.0,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          121.0,
+          76.0
+        ],
+        "hair_highlight": [
+          226.0,
+          177.0,
+          129.0
+        ]
+      },
+      "target_color": {
+        "blouse": [
+          207.0,
+          183.0,
+          161.0
+        ],
+        "trousers": [
+          89.0,
+          91.0,
+          103.0
+        ],
+        "skin": [
+          216.0,
+          159.0,
+          122.0
+        ],
+        "shoes": [
+          92.0,
+          81.0,
+          75.0
+        ],
+        "hair_shadow": [
+          98.2,
+          60.0,
+          28.0
+        ],
+        "hair_mid": [
+          170.0,
+          122.0,
+          76.0
+        ],
+        "hair_highlight": [
+          228.0,
+          179.0,
+          132.0
+        ]
+      },
+      "exports": [
+        {
+          "crop": "waist",
+          "path": "exports/assets/characters/sofia/s05_surprised_waist.png",
+          "resource_key": "s05_surprised_waist",
+          "game_path": "assets/characters/sofia/s05_surprised_waist.png",
+          "crop_box": [
+            0,
+            0,
+            1024,
+            950
+          ],
+          "sha256": "6a4682d3a360ed363daff067e0178474f04479e191dc52bd640d84bbe46a5da2",
+          "exact_crop_verified": true
+        }
+      ]
+    }
+  ],
+  "approval": {
+    "date": "2026-11-04",
+    "status": "approved",
+    "user_instruction": "в сессии \"картинки\" мы сделали позы.изучи сессию, прими все фото персонажей и  добавь их в прототип",
+    "source_thread_title": "картинки",
+    "source_thread_id": "01a1989c-7990-7180-ae25-e77e8659bedc",
+    "scope": "All six final character sets after the second color review: 88 full-body sources, 60 basic PNGs in tone_matched_v2 and the 104 scene-ready game exports. Includes the accepted Nikita N01 happy and Sofya S05 arms-down substitutions. No image pixels changed by approval or integration."
+  }
+}
