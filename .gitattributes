@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.png binary
+
+# Preserve upstream bytes for release checksum verification.
+/game/index.html -text
+/game/engine/** -text
+/game/lib/** -text
+/game/LICENSE -text
+/game/NOTICE.md -text
+/game/COMMERCIAL-USE.md -text
