@@ -9,7 +9,6 @@
 <p align="center">
   <a href="https://github.com/thwkxri/Obratnaya_storona_kholsta/archive/refs/heads/main.zip"><strong>Скачать игру</strong></a>
   · <a href="#как-играть">Как играть</a>
-  · <a href="#как-менять-игру">Исходники</a>
 </p>
 
 ## До открытия дороги
@@ -26,25 +25,8 @@
 
 <p align="center">
   <img src="docs/screenshots/hall.png" width="270" alt="Аркадий в холле усадьбы">
-  <img src="docs/screenshots/notebook.png" width="270" alt="Илья с блокнотом в столовой">
+  <img src="docs/screenshots/gallery.png" width="270" alt="Портрет Елены в галерее усадьбы">
 </p>
-
-## Как менять игру
-
-- **Фоны.** Чтобы заменить изображение, сохраните его имя, например `BG01.png`. [Игровые PNG](game/assets/backgrounds), [реестр фонов](prototype_dev/BACKGROUNDS.md).
-- **Сценарий.** После правок постановки пересоберите `game/story.js` командами ниже. [Исходники сценария](prototype_dev/scenario_v9).
-- **Постановка персонажей.** Масштаб, кадрирование и привязка образов задаются при сборке. [Сборщик](prototype_dev/build_prototype.py), [таблица поз](prototype_dev/POSE_SUBSTITUTIONS.md).
-
-Для сборки и проверки нужны Python 3.11+ с Pillow и Node.js. Для запуска готовой игры эти инструменты не нужны.
-
-```sh
-python -m pip install Pillow
-python prototype_dev/build_prototype.py
-node prototype_dev/parse_story.cjs
-python prototype_dev/verify_prototype.py
-```
-
-Для проверки интерфейса в Edge на Windows выполните `npm ci --prefix prototype_dev/test_runtime`, затем запустите `node prototype_dev/browser_routes.cjs` и `node prototype_dev/browser_evidence.cjs`.
 
 ## Текущая версия
 
