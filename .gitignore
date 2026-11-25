@@ -4,8 +4,13 @@
 !/.gitattributes
 !/README.md
 !/game/
+!/docs/
 !/prototype_dev/
 !/characters/
+
+/docs/**
+!/docs/**/
+!/docs/screenshots/*.png
 
 /game/*
 !/game/index.html
